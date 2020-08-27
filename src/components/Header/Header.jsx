@@ -20,7 +20,7 @@ const Header = (props) => {
                 <Nav className="ml-auto employer-header" style={{ backgroundColor: bgColor }}>
                     <Link className="nav-link" to="/job-seekers" style={{ color: linkColor }}>Job Seekers</Link>
                     <Link className="nav-link" to="/employers" style={{ color: linkColor }}>Employers</Link>
-                    <Link className="nav-link" to="/job-fair" style={{ color: linkColor }}>Recruiters</Link>
+                    <Link className="nav-link" to="/job-fairs" style={{ color: linkColor }}>Recruiters</Link>
                 </Nav>
             </div>
         </header>
