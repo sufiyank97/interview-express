@@ -1,0 +1,23 @@
+.contact-us{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem 1rem 5rem;
+    background-color: #006eab;
+    &-text{
+        color:white;
+    }
+    &-button{
+        button{
+            border: none;
+            background-color: white;
+            color:#006eab;
+            padding: 1rem 5rem 1rem 5rem;
+            border-radius: 2rem;
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.navbar{
+    margin-left: 4rem;
+
+    &-brand{
+        img{
+            width: 60%;
+        }
+    }
+    .nav-link{
+        // padding-left: 1rem !important;
+        
+        
+    }
+}
+
+.container1{
+    display: flex;
+}
+
+.image{
+    display: flex;
+    padding-top: 2rem;
+    height: fit-content;
+    justify-content: center;
+    align-items: baseline;
+    img{
+        width: 60%;
+    }
+}
+.nav{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    &-link{
+        height: fit-content;
+    }
+}

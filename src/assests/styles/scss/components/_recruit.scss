@@ -1,0 +1,51 @@
+.recruit{
+
+    margin: 0 5rem 5rem 5rem;
+    &-card{
+
+        &-1{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin-top: -5rem;
+            &-image{
+                img{
+                    margin-left: -13rem;
+                    margin-bottom: 2rem;
+                }
+            }
+            &-box{
+                z-index: -1;
+                padding: 1rem 15rem 1rem 1rem;
+                // width: 50rem;
+                // height: 10rem;
+                border-radius: 1rem;
+                box-shadow: 0 10px 0 0 #abc720;
+                background-color: #f3f3f3;
+            }
+        }
+
+
+        &-2{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-top: -5rem;
+            &-image{
+                img{
+                    margin-left: -13rem;
+                    margin-bottom: 2rem;
+                }
+            }
+            &-box{
+                z-index: -1;
+                padding: 1rem 15rem 1rem 1rem;
+                // width: 50rem;
+                // height: 10rem;
+                border-radius: 1rem;
+                box-shadow: 0 10px 0 0 #006fad;
+                background-color: #f3f3f3;
+            }
+        }
+    }
+}

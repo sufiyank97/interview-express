@@ -1,0 +1,81 @@
+.employers-para{
+    display: flex;
+    margin-top: -10rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    &-text{
+        width: 45%;
+        &-quote{
+            margin-top: 3rem;
+            h1{
+                font-size: 2rem !important;
+                color: #888888;
+                font-weight: 600;
+                font-style: italic;
+            }
+            &-2{
+                padding-left: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                // line-height: 2;
+            }
+        }
+
+        &-sms{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            h1{
+                font-size: 1.8rem !important;
+            }
+            input{
+                border: solid 2px #b1aaaa;
+                background-color: #ffffff;
+                border-radius: 1rem;
+                padding: 1rem;
+
+                &:focus{
+                    outline: none !important;
+                }
+            }
+            button{
+                margin-top: 1rem;
+                width: fit-content;
+                align-self: flex-end;
+                border-radius: 20px;
+                background-color: #abc720;
+                border: none;
+                padding: .5rem 3rem .5rem 3rem;
+                color:white;
+                font-weight: bold;
+                &:focus{
+                    outline: none !important;
+                }
+            }
+        }
+    }
+
+    &-image{
+        display: flex;
+        margin-left: 80px;
+
+        &-3{
+            height: 15rem;
+            position: absolute;
+            
+            margin-top: 75px;
+        }
+        &-2{
+            height: 19rem;
+            margin-left: 65px;
+            margin-top: 32px;
+            z-index: 1;
+            position: absolute;
+        }
+        &-1{
+            height: 24rem;
+            z-index: 1;
+            margin-left: 185px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// .top-container{
+//     position: relative;
+// 	background-size: 100% 100%;
+//     overflow: hidden;
+//     background-image: url('../../../images/job-seekers1.svg');
+// }
+
+.available-tag{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    &-images{
+        display: inherit;
+        justify-content: space-evenly;
+        img{
+            width: 30%;
+        }
+    }
+}
+
+.register-tag{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &-button{
+        margin-top: -2rem;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        @include media('<tablet'){
+            justify-content: center;
+            margin-right: 0em;
+        }
+        button{
+            width: 300px;
+            height: 50px;
+            border-radius: 2rem;
+            color:white;
+            border: none !important;
+            background-color: #26a8ff;
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+}
+.divider{
+    display: block;
+    height: .5rem;
+    background-color: #d9d9d9;
+}

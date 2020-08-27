@@ -1,0 +1,14 @@
+.faq{
+
+    background-color: #f3f3f3;
+    padding:2rem 5rem 2rem 5rem;
+
+    &-card{
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 2rem;
+    }
+}

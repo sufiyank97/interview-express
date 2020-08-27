@@ -1,0 +1,33 @@
+$breakpoints: (
+	'xs-phone': 320px,
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'wide1125':1125px,
+	'widescreen': 1200px,
+	'large': 1400px,
+	'xl': 1800px
+);
+
+@import './vendors/include-media';
+
+// components
+@import './components/header';
+@import './components/footer';
+@import './components/flat-design';
+@import './components/employers-para';
+@import './components/benefits';
+@import './components/recruit';
+@import './components/features';
+@import './components/faq';
+@import './components/contact-us';
+@import './components/benefits-first';
+@import './components/virtual-para';
+
+// global
+@import './pages/global';
+
+
+// pages
+@import './pages/home-page';
+@import './pages/employers-page';
