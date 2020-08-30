@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 
 
@@ -25,6 +25,69 @@ const Benifits = ({ benifits }) => {
             </div>
             <div className="entry-box"></div>
 
+            <div className="benefits-res-box">
+                <h1>{benifits.name}:</h1>
+                <div className="entry-box-res"></div>
+                {
+                    (Array.isArray(benifits.allImages)) ?
+                        benifits.allImages.map((allImage, i, array) => (
+                            <Fragment key={i}>
+                                {
+                                    (allImage.card) ? (
+                                        <div className="benefits-res-box-card">
+                                            {
+                                                (allImage.cImage) ? (
+                                                    <div className="benefits-res-box-card-comming">
+                                                        <img src={allImage.cImage} alt="" />
+                                                    </div>
+                                                ) : <Fragment />
+                                            }
+                                            <div className="benefits-res-box-card-image">
+                                                <img src={allImage.image} alt="" />
+                                            </div>
+                                            <div className="benefits-res-box-card-heading">
+                                                <h3>{allImage.title}</h3>
+                                            </div>
+                                            <div className="benefits-res-box-card-para">
+                                                <p>
+                                                    {allImage.desc}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    ) : (
+
+                                            <div className="benefits-res-box-1">
+                                                <div className="benefits-res-box-1-image">
+                                                    {
+                                                        (i === 0) ? (
+                                                            <img src={allImage.image} alt="" style={{ marginTop: '-8rem' }} />
+                                                        ) : (
+                                                                <img src={allImage.image} alt="" />
+                                                            )
+                                                    }
+                                                </div>
+                                                {
+                                                    (i === 3) ? (
+                                                        <div className="entry-box1-res"></div>
+                                                    ) : null
+                                                }
+                                                <div className="benefits-res-box-1-text">
+                                                    <div className="benefits-res-box-1-text-heading">
+                                                        <h3>{allImage.title}</h3>
+                                                    </div>
+                                                    <div className="benefits-res-box-1-text-para">
+                                                        <p>
+                                                            {allImage.desc}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )
+                                }
+                            </Fragment>
+                        )) : null
+                }
+            </div>
 
             {
                 (benifits.image2.card) ? (
@@ -32,7 +95,6 @@ const Benifits = ({ benifits }) => {
                     <div className="benefits-recruiters">
                         <div className="benefits-recruiters-1-image">
                             <div className="benefits-recruiters-1-image-text">
-
                                 <div className="benefits-recruiters-1-image-text-box" style={{ borderRadius: '1rem' }}>
                                     <div className="benefits-recruiters-1-image-text-box-image">
                                         <img src={benifits.image2.image} alt="" />
@@ -121,7 +183,61 @@ const Benifits = ({ benifits }) => {
                     <img src={benifits.image4.image} alt="" />
                 </div>
             </div>
-            <div className="entry-box1"></div>
+            {
+                (benifits.image5) ? <Fragment /> : <div className="entry-box1"></div>
+            }
+
+
+            {
+                (benifits.image5) ? (
+                    <div className="benefits-box" style={{ marginTop: '-11rem' }}>
+                        <div className="benefits-box-1">
+
+                            <div className="benefits-box-1-text-box">
+                                <div className="benefits-box-1-text-box-image">
+                                    <img src={benifits.image5.image} alt="" />
+                                </div>
+                                <div className="benefits-box-1-text-box-title">
+                                    <h3>{benifits.image5.title}</h3>
+                                    <p>
+                                        {benifits.image5.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ) : <Fragment />
+            }
+
+            {
+                (benifits.image6) ? (
+                    <>
+                        <div className="benefits-recruiters" style={{ marginTop: '4rem' }}>
+                            <div className="benefits-recruiters-1-image">
+                                <div className="benefits-recruiters-1-image-text">
+                                    <div className="benefits-recruiters-1-image-text-box" style={{ borderRadius: '1rem',flexDirection:'column' }}>
+                                    <div className="benefits-res-box-card-comming" style={{marginTop:'-1.5rem'}}>
+                                        <img src={benifits.image6.cImage} alt="" />
+                                    </div>
+                                        <div style={{display:'flex'}}>
+                                            <div className="benefits-recruiters-1-image-text-box-image">
+                                                <img src={benifits.image6.image} alt="" />
+                                            </div>
+                                            <div className="benefits-recruiters-1-image-text-box-title">
+                                                <h3>{benifits.image6.title}</h3>
+                                                <p>
+                                                    {benifits.image6.desc}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="entry-box1"></div>
+                    </>
+                ) : <Fragment />
+            }
         </div>
     )
 }

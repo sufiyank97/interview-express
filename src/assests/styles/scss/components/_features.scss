@@ -1,6 +1,9 @@
 .features{
 
     padding: 5rem;
+    @include media('<tablet'){
+        padding: 1rem;
+    }
     background-color: #f3f3f3;
     h1{
         margin-bottom: 2rem;
@@ -11,9 +14,9 @@
         justify-content: space-evenly;
         &-image{
             width: 70%;
-            img{
-                width: 100%;
-            }
+            // img{
+            //     width: 100%;
+            // }
         }
         &-card{
             padding: 2rem;
@@ -25,7 +28,43 @@
 
 
 .card-box{
+    box-shadow: 0 50px 50px 0 rgba(0, 111, 173, 0.1);
     padding: 1rem;
     background-color: white;
     border-radius: 1rem;
+}
+
+.features-res{
+    &-image{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        img{
+            @include media('<desktop'){
+                width: 50%;    
+            }
+            @include media('<tablet'){
+                width: auto;
+            }
+            @include media('<phone'){
+                width: auto;
+            }
+        }
+    }
+
+    &-para{
+        margin-bottom: 2rem;
+    }
+}
+
+@include media('<desktop'){
+    .features-interview{
+        display: none;
+    }
+}
+
+@include media('>desktop'){
+    .features-res{
+        display: none;
+    }
 }

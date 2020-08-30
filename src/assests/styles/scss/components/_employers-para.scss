@@ -3,15 +3,37 @@
     margin-top: -10rem;
     margin-left: 5rem;
     margin-bottom: 2rem;
+    
     &-text{
         width: 45%;
+        @include media('<tablet'){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include media('<phone'){
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
         &-quote{
             margin-top: 3rem;
+            @include media('<phone'){
+                padding: 0rem 1rem 0rem;
+            }
+            @include media('<tablet'){
+                padding: 0rem 2rem;
+            }
             h1{
                 font-size: 2rem !important;
                 color: #888888;
                 font-weight: 600;
                 font-style: italic;
+                @include media('<phone'){
+                    font-size: 1.7rem !important;
+                }
             }
             &-2{
                 padding-left: 3rem;
@@ -24,9 +46,12 @@
         &-sms{
             display: flex;
             flex-direction: column;
-            margin-top: 2rem;
+            margin-top: -2rem;
             h1{
                 font-size: 1.8rem !important;
+                @include media('<phone'){
+                    font-size: 1.6rem !important;
+                }
             }
             input{
                 border: solid 2px #b1aaaa;
@@ -45,11 +70,15 @@
                 border-radius: 20px;
                 background-color: #abc720;
                 border: none;
-                padding: .5rem 3rem .5rem 3rem;
+                padding: .5rem 3rem;
                 color:white;
                 font-weight: bold;
                 &:focus{
                     outline: none !important;
+                }
+                @include media('<phone'){
+                    align-self: center;
+                    padding: .8rem 4rem;
                 }
             }
         }
@@ -58,7 +87,13 @@
     &-image{
         display: flex;
         margin-left: 80px;
-
+        
+        
+        @include media('<tablet'){
+            justify-content: center;
+            margin-left: 0px;
+            margin-top: -10rem;
+        }
         &-3{
             height: 15rem;
             position: absolute;
@@ -76,6 +111,85 @@
             height: 24rem;
             z-index: 1;
             margin-left: 185px;
+            @include media('<tablet'){
+                margin-left: 0px;
+                
+            }
+        }
+
+        &-11{
+            height: 24rem;
+            z-index: 1;
+            @include media('<tablet'){
+                margin-left: 0px;
+            }
+            @include media('<phone'){
+                width: 70%;
+                height: 15rem;
+            }
         }
     }
+}
+
+
+@include media('<tablet'){
+    .employers-para{
+        display: none;
+    }
+}
+
+@include media('>tablet'){
+    .employers-mobile{
+        display: none;
+    }
+}
+
+
+
+.employers-mobile{
+
+    
+        &-images{
+            display: flex;
+            justify-content: center;
+            margin-top: -5rem;
+            margin-bottom: 2rem;
+
+            &-3{
+                position: absolute;
+                z-index: -1;
+                display: inherit;
+                align-self: flex-end;
+                margin-left: -7rem;
+            }
+            &-2{
+                position: absolute;
+                z-index: -1;
+                margin-left: -3rem;
+                display: inherit;
+                align-self: flex-end;
+            }
+            &-1{
+                margin-left: 5rem;
+            }
+            &-22{
+                position: absolute;
+                z-index: -1;
+                margin-left: -150px;
+                display: inherit;
+                align-self: flex-end;
+                @include media('<phone'){
+                    margin-left: -4rem;
+                    width: 30%;
+                }
+            }
+            &-12{
+                @include media('<phone'){
+                    width: 40%;
+                    margin-left: 3rem;
+                }
+            }
+        }
+
+    
 }

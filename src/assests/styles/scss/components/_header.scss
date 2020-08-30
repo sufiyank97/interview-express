@@ -1,15 +1,30 @@
 .navbar{
     margin-left: 4rem;
+    display: flex;
+    align-items: flex-start;
 
+    @include media('<phone'){
+        margin-left: 0rem;
+    }
     &-brand{
+        flex: 1;
         img{
-            width: 60%;
+            width: 80%;
+            
         }
     }
+
+    &-collapse{
+        @include media('>tablet'){
+            margin-right: -1rem;
+        }
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
     .nav-link{
-        // padding-left: 1rem !important;
-        
-        
+        padding-left: 2rem !important;
     }
 }
 
@@ -19,6 +34,7 @@
 
 .image{
     display: flex;
+    padding-left: 5rem;
     padding-top: 2rem;
     height: fit-content;
     justify-content: center;
@@ -33,5 +49,25 @@
     justify-content: center;
     &-link{
         height: fit-content;
+        margin-top: 1rem;
+        @include media('<tablet'){
+            color: black !important;
+        }
+    }
+    @include media('>tablet'){
+        z-index: 1;
     }
 }
+
+.employer-header{
+    width: 30rem;
+    height: 18rem;
+    margin-left: auto;
+    margin-top: -1rem;
+    // background: #abc720;
+    border-bottom-left-radius: 3rem;
+    @include media('<tablet'){
+        background-color: transparent !important;
+    }
+}
+

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, Fragment } from 'react'
 
 
 const faqValues = [
@@ -20,6 +20,14 @@ const faqValues = [
     }
 ]
 const Faq = () => {
+    const [state, setState] = useState({ id: null, active: false })
+    const activeHandler = (id) => {
+        setState({
+            ...state,
+            active: !state.active,
+            id
+        })
+    }
     return (
         <div className="faq">
             <h1>FAQ:</h1>
@@ -28,6 +36,28 @@ const Faq = () => {
                     <div className="faq-card" key={i}>
                         <h1>{faqValue.ques}</h1>
                         <p>{faqValue.answer}</p>
+                    </div>
+                ))
+            }
+
+            {
+                faqValues.map((faqValue, i) => (
+                    <div className="faq-mobile-card" onClick={() => activeHandler(i)} key={i}>
+                        <div className="faq-mobile-card-ques">
+                            <h1>{faqValue.ques}</h1>
+                            {
+                                (state.id === i) ? (state.active) ? (<span>-</span>) : (<span>+</span>) : (<span>+</span>)
+                            }
+
+                        </div>
+                        {
+                            (state.id === i) ? (state.active) ? (
+                                <div className="faq-mobile-card-ans">
+                                    <p>{faqValue.answer}</p>
+                                </div>
+                            ) : <Fragment /> : null
+                        }
+
                     </div>
                 ))
             }

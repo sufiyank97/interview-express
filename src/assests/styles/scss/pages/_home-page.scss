@@ -1,25 +1,60 @@
 .data{
     display: flex;
+    flex-direction: row;
+    @include media('<tablet'){
+        flex-wrap: wrap;
+    }
+    @include media('<tablet'){
+        &-first{
+            flex-wrap: wrap-reverse;
+        }
+    }
 
+    @include media('>tablet'){
+        &-first{
+            margin-top: -13rem;
+        }
+    }
+margin-bottom: 2rem;
     &-text{
         margin-top: 1rem;
         padding-left: 5rem;
+        display: flex;
+        flex-direction: column;
+        @include media('<tablet'){
+            align-items: center;
+            padding-left: 0rem;
+        }
+    }
+    &-text1{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5rem;
+        
+        width: 90%;
+        margin-top: 1rem;
+        
+        @include media('<tablet'){
+            align-items: center;
+            padding-left: 0rem;
+        }
     }
     &-image-first{
-        display: inherit;
-        justify-content: flex-end;
+        // display: inherit;
+        // justify-content: flex-end;
         img{
             width: 100%;
             background-color: #006fad;
             border-bottom-left-radius: 3rem;
-            z-index: -50;  
-            margin-top: -5rem;
+            @include media('>tablet'){
+                margin-top: -5rem;
+            }
         }
     }
 
     &-image-second{
-        display: inherit;
-        justify-content: start;
+        // display: inherit;
+        // justify-content: start;
         img{
             width: 100%;
             background-color: #abc720;
@@ -29,25 +64,27 @@
     }
 
     &-arrow{
-        display: flex;
-        justify-content: flex-end;
+        margin-left: auto;
         padding-right: 3rem;
         img{
-            width: 9%;
+            width: 70%;
         }
     }
     .list-group{
-        margin-top: 1rem;
+        // margin-top: 1rem;
         display: flex;
         &-item{
             border: none;
-            padding: 0em !important;
+            // padding: 0em !important;
             display: inherit;
-            margin-top: 1rem;
-    margin-bottom: 1rem;
+            // margin-top: 1rem;
+    // margin-bottom: 1rem;
             img{
                 margin-right: 1rem;
-                width: 5%;
+                width: 7%;
+                @include media('<tablet'){
+                    width: 10%;
+                }
             }
             &-text{
                 width: 60%;
@@ -55,7 +92,15 @@
                 align-items: center;
                 color: #888888;
                 font-size: 1rem;
+                @include media('<tablet'){
+                    width: 100%;
+                }
             }
         }
     }
 }
+
+
+// .data1{
+//     flex-direction: row-reverse;
+// }

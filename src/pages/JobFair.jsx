@@ -5,7 +5,9 @@ import { Header, EmployersPara, RegisterTag, BenifitsFirst, AvailableTag, Faq, F
 
 // job-fair Para images
 const flatDesign1Img = require('../assests/images/job-fair/para/job-fair1.png')
+const resflatDesign1Img = require('../assests/images/job-fair/para/job-fair1-res1.png')
 const flatDesign2Img = require('../assests/images/job-fair/para/job-fair.png')
+const resflatDesign2Img = require('../assests/images/job-fair/para/job-fair-res.png')
 
 const jobFairPara = {
     name: 'Register for a job fair',
@@ -14,7 +16,9 @@ const jobFairPara = {
     ],
     image3: '',
     image2: flatDesign2Img.default,
-    image1: flatDesign1Img.default
+    resImage2: resflatDesign2Img.default,
+    image1: flatDesign1Img.default,
+    resImage1: resflatDesign1Img.default
 }
 
 const JobFair = () => {

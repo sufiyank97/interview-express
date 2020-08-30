@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { Header, EmployersPara, ContactUs, BenifitsFirst, AvailableTag, Faq, Footer } from '../components/index'
+import { Header, EmployersPara, ContactUs, BenifitsFirst, AvailableTag, Footer } from '../components/index'
 
 
 // private events Para images
-const flatDesign1Img = require('../assests/images/private-events/interview.png')
-
+const flatDesign1Img = require('../assests/images/private-events/interview2.png')
+const resflatDesign1Img = require('../assests/images/private-events/interview1.png')
 
 const privateEventsPara = {
     name: 'Private Events',
@@ -15,7 +15,8 @@ const privateEventsPara = {
     ],
     image3: '',
     image2: '',
-    image1: flatDesign1Img.default
+    image1: flatDesign1Img.default,
+    resImage1: resflatDesign1Img.default
 }
 
 const PrivateEvents = () => {

@@ -6,6 +6,7 @@ import PrivateEvents from './PrivateEvents'
 import JobFair from './JobFair'
 import ResumePage from './ResumePage'
 import VirtualEvent from './VirtualEvent'
+import JobFairCalendar from './JobFairCalendar'
 export {
     HomePage,
     EmployersPage,
@@ -14,5 +15,6 @@ export {
     PrivateEvents,
     JobFair,
     VirtualEvent,
-    ResumePage
+    ResumePage,
+    JobFairCalendar
 }

@@ -97,7 +97,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/event-calendar">
+                                    <Link to="/job-fair-calendar">
                                         Event Calendar
                                     </Link>
                                 </li>

@@ -5,8 +5,16 @@
     align-items: center;
     padding: 1rem 5rem 1rem 5rem;
     background-color: #006eab;
+    @include media('<tablet'){
+        flex-direction: column;
+        padding: 1rem 2rem 1rem 2rem;
+        justify-content: center;
+    }
     &-text{
         color:white;
+        @include media('<tablet'){
+            text-align: center;
+        }
     }
     &-button{
         button{

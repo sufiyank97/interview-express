@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { HomePage, EmployersPage, RecruitersPage, JobSeekers, ResumePage, PrivateEvents, JobFair, VirtualEvent } from './pages/index'
+import { HomePage, EmployersPage, RecruitersPage, JobSeekers, ResumePage, PrivateEvents, JobFair, VirtualEvent, JobFairCalendar } from './pages/index'
 
 // Scss File
 import './app.scss'
@@ -16,6 +16,9 @@ const App = () => {
             <Route exact path="/job-fairs" component={JobFair} />
             <Route exact path="/virtual-events" component={VirtualEvent} />
             <Route exact path="/resume" component={ResumePage} />
+            <Route exact path="/recruiters" component={RecruitersPage} />
+            <Route exact path="/job-fair-calendar" component={JobFairCalendar} />
+
         </Router>
     )
 }

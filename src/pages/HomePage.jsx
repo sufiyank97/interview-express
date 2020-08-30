@@ -30,12 +30,13 @@ const employers = [
     { id: 3, image: lifebuoyImg, desc: 'Feeling overwhelmed with the candidate pool?' },
     { id: 4, image: googleCalendarImg, desc: 'Need to make your interview process more efficient? Wasting time in between interviews?' },
 ]
+// style={{ marginTop: '-13rem' }}
 const HomePage = () => {
     return (
         <>
             <Header linkColor="white" />
-            <div className="data" style={{ marginTop: '-13rem' }}>
-                <div className="w-50 data-text">
+            <div className="data data-first" >
+                <div className="data-text1">
                     <h1>Job Seekers</h1>
                     <ListGroup>
                         {
@@ -53,16 +54,16 @@ const HomePage = () => {
                         <img src={arrowGreen} />
                     </div>
                 </div>
-                <div className="w-50 data-image-first">
+                <div className="data-image-first">
                     <img src={jobSeekerImg} />
                 </div>
             </div>
 
             <div className="data">
-                <div className="w-50 data-image-second">
+                <div className="data-image-second">
                     <img src={employersImg} />
                 </div>
-                <div className="w-50 data-text" style={{ marginTop: '3rem' }}>
+                <div className="data-text" style={{ marginTop: '3rem' }}>
                     <h1>Employers</h1>
                     <ListGroup>
                         {
