@@ -47,9 +47,9 @@ const twitterImg = require('../../assests/images/social-media/twitter.svg')
 
 
 
-const Footer = () => {
+const Footer = ({ newPosition }) => {
     return (
-        <footer className="footer">
+        <footer className="footer" style={{ position: newPosition }}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-lg-6 col-sm-12 mr-auto">

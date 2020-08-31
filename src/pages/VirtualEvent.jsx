@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { Header, VirtualPara, RegisterTag, FlatDesign, BenifitsFirst, AvailableTag, Faq, Footer } from '../components/index'
+import { Header, VirtualPara, RegisterTag, FlatDesign, Footer } from '../components/index'
 
 const VirtualEvent = () => {
     return (
         <div>
-            <Header linkColor="white" bgColor="#abc720" />
+            <Header headerLinks="links2" bgColor="#abc720" />
             <VirtualPara />
             <FlatDesign />
             <RegisterTag />

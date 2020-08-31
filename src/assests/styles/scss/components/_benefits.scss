@@ -187,7 +187,7 @@ padding-top: 3rem;
     margin-top: -100px;
     border-bottom-right-radius: 4rem;
     margin-right: auto;
-    background: green;
+    background: #006fad;
 }
 
 .entry-box-res{
@@ -196,7 +196,7 @@ padding-top: 3rem;
     height: 12rem;
     border-bottom-right-radius: 4rem;
     margin-right: auto;
-    background: green;
+    background: #006fad;
     @include media('<phone'){
         width: 13rem;
     }

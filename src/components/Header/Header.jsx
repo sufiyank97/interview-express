@@ -4,8 +4,18 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 import Logo from '../../assests/images/logo.svg'
 
 const Header = (props) => {
+    const { headerLinks, bgColor, newHeight } = props
 
-    const { linkColor, bgColor } = props
+    const links1 = [
+        { name: 'Job Seekers', link: '/job-seekers' },
+        { name: 'Employers', link: '/employers' },
+        { name: 'Recruiters', link: '/recruiters' }
+    ]
+    const links2 = [
+        { name: 'Calendar', link: '/job-fair-calendar' },
+        { name: 'Virtual', link: '/virtual-events' },
+        { name: 'Private Events', link: '/private-events' }
+    ]
     return (
 
         // <header>
@@ -37,11 +47,15 @@ const Header = (props) => {
             </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto employer-header" style={{ backgroundColor: bgColor }}>
-                    <Link to="/job-seekers" className="nav-link" style={{ color: linkColor }}>Job Seekers</Link>
-                    <Link to="/employers" className="nav-link" style={{ color: linkColor }}>Employers</Link>
-                    <Link to="/recruiters" className="nav-link" style={{ color: linkColor }}>Recruiters</Link>
-
+                <Nav className="ml-auto employer-header" style={{ backgroundColor: bgColor, height: newHeight }}>
+                    {
+                        (headerLinks === "links1") ?
+                            links1.map((headerLink, i) => (
+                                <Link to={headerLink.link} className="nav-link" key={i}>{headerLink.name}</Link>
+                            )) : links2.map((headerLink, i) => (
+                                <Link to={headerLink.link} className="nav-link" key={i}>{headerLink.name}</Link>
+                            ))
+                    }
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
@@ -49,7 +63,3 @@ const Header = (props) => {
 }
 
 export default Header
-//
-// 
-
-// style={{ color: linkColor }}

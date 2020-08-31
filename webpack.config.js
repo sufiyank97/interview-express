@@ -10,7 +10,7 @@ module.exports = {
         // compress: true,
         // stats: 'errors-warnings',
         // watchContentBase: true,
-        // historyApiFallback: true
+        historyApiFallback: true,
         compress: true,
         port: 0,
         open: true,

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, EmployersPara, RegisterTag, Benifits, AvailableTag, Faq, Footer } from '../components/index'
+import { Header, EmployersPara, RegisterTag, Benifits, AvailableTag, JobFairPara, Footer } from '../components/index'
 
 // job-seekers Para images
 const flatDesign1Img = require('../assests/images/job-seekers/para/hire-room1.png')
@@ -86,14 +86,17 @@ const jobSeekersBenifits = {
         },
     ]
 }
+
 const JobSeekers = () => {
     return (
         <div>
-            <Header linkColor="white" bgColor="#006eab" />
+            <Header headerLinks="links2" bgColor="#006eab" />
             <EmployersPara employees={jobSeekersPara} />
             <RegisterTag />
             <AvailableTag bgColor="lightgrey" />
             <Benifits benifits={jobSeekersBenifits} />
+            <JobFairPara />
+            <RegisterTag />
             <AvailableTag bgColor="white" />
             <Footer />
         </div>

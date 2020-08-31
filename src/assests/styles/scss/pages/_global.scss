@@ -61,14 +61,14 @@
 
     &-para{
         display: flex;  
-        margin-top: -10rem;
+        background-color: #f3f3f3;
+        padding: 5rem;
         @include media('<tablet'){
             margin-top: 0rem;
+            flex-direction: column-reverse;
+            padding: 2rem;
         }
-        margin-left: 5rem;
-        @include media('<phone'){
-            margin-left: 2rem;
-        }
+        
         &-text{
             flex: 1;
             @include media('<tablet'){
@@ -125,7 +125,11 @@
         }
         &-map{
             flex: 1;
+            iframe{
+                width: 100%;
+            }
             @include media('<tablet'){
+                // padding-right: 2rem;
                 flex:0;
             }
         }

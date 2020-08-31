@@ -19,6 +19,7 @@ import ContactUs from './ContactUs/ContactUs'
 
 import VirtualPara from './VirtualEvent/VirtualPara'
 
+import JobFairPara from './JobFair/JobFairPara'
 export {
     Header,
     Footer,
@@ -33,5 +34,6 @@ export {
     BenifitsFirst,
     ContactUs,
     VirtualPara,
-    RegisterJobFair
+    RegisterJobFair,
+    JobFairPara
 }

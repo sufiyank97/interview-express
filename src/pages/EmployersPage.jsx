@@ -80,7 +80,7 @@ const empBenifits = {
 const EmployersPage = () => {
     return (
         <div>
-            <Header linkColor="white" bgColor="#abc720" />
+            <Header headerLinks="links2" bgColor="#abc720" />
             <EmployersPara employees={empPara} />
             <RegisterTag />
             <Benifits benifits={empBenifits} />

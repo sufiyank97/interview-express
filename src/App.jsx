@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'
+import React, { lazy, Suspense, Fragment } from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -14,14 +14,15 @@ const JobFair = lazy(() => import('./pages/index').then((module) => ({ default: 
 const VirtualEvent = lazy(() => import('./pages/index').then((module) => ({ default: module.VirtualEvent })))
 const JobFairCalendar = lazy(() => import('./pages/index').then((module) => ({ default: module.JobFairCalendar })))
 
+const NoMatchPage = lazy(() => import('./pages/index').then(module => ({ default: module.NoMatchPage })))
 
 // Scss File
 import './app.scss'
 const App = () => {
     return (
-        <Router>
-            <Switch>
-                <Suspense fallback={<div></div>}>
+        <Suspense fallback={<Fragment />}>
+            <Router>
+                <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route path="/employers" component={EmployersPage} />
                     <Route path="/job-seekers" component={JobSeekers} />
@@ -31,10 +32,11 @@ const App = () => {
                     <Route path="/resume" component={ResumePage} />
                     <Route path="/recruiters" component={RecruitersPage} />
                     <Route path="/job-fair-calendar" component={JobFairCalendar} />
-                </Suspense>
-            </Switch>
+                    <Route component={NoMatchPage} />
+                </Switch>
 
-        </Router>
+            </Router>
+        </Suspense>
     )
 }
 

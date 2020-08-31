@@ -79,7 +79,7 @@ growing group of expanding companies.`
 const RecruitersPage = () => {
     return (
         <div>
-            <Header linkColor="white" bgColor="#abc720" />
+            <Header headerLinks="links2" bgColor="#abc720" />
             <EmployersPara employees={recruitersPara} />
             <RegisterTag />
             <AvailableTag bgColor="lightgrey" />

@@ -95,7 +95,9 @@
 
 .footer{
     background-color: lightgray;
-
+    position: relative;
+    width: 100%;
+    bottom: 0;
     .row{
         padding-top: 4rem;
     }
@@ -132,6 +134,7 @@
             color: #888888;
             &:hover{
                 text-decoration: none;
+                color: #abc720;
             }
         }
         }

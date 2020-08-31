@@ -24,7 +24,7 @@ const jobFairPara = {
 const JobFair = () => {
     return (
         <div className="job-fair">
-            <Header linkColor="white" bgColor="#006eab" />
+            <Header headerLinks="links2" bgColor="#006eab" />
             <EmployersPara employees={jobFairPara} sms={true} />
             <AvailableTag bgColor="white" />
             <Footer />

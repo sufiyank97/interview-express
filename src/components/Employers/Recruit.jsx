@@ -4,7 +4,7 @@ const bestCandidatesImg = require('../../assests/images/employers/recruit/best-c
 
 const Recruit = () => {
     return (
-        
+
         <div className="recruit">
             <h1 className="recruit-title global-title">Recruit from anywhere.</h1>
             <div className="recruit-card-1">
@@ -25,7 +25,7 @@ const Recruit = () => {
                 <div className="recruit-res-1-image">
                     <img src={unlimitedImg.default} alt="" />
                 </div>
-                <div className="recruit-res-1-box">
+                <div className="recruit-res-1-box" style={{ boxShadow: '0 10px 0 0 #abc720' }}>
                     <h1>Unlimited Access</h1>
                     <h6>Centralize your team while recruiting from anywhere..</h6>
                     <h6>
@@ -35,6 +35,7 @@ const Recruit = () => {
                         The Events platform enables recruiters to view resumes and invite job seekers to interview.</h6>
                 </div>
             </div>
+
             <div className="recruit-card-2">
                 <div className="recruit-card-2-box">
                     <h1>Unlimited Access</h1>
@@ -54,7 +55,7 @@ const Recruit = () => {
                 <div className="recruit-res-1-image1">
                     <img src={bestCandidatesImg.default} alt="" />
                 </div>
-                <div className="recruit-res-1-box">
+                <div className="recruit-res-1-box" style={{ boxShadow: '0 10px 0 0 #006fad' }}>
                     <h1>Unlimited Access</h1>
                     <h6>Centralize your team while recruiting from anywhere..</h6>
                     <h6>

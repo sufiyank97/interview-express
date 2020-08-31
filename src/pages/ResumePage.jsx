@@ -124,7 +124,7 @@ const resumeBenifits = {
 const ResumePage = () => {
     return (
         <div>
-            <Header linkColor="white" bgColor="#006eab" />
+            <Header headerLinks="links2" bgColor="#006eab" />
             <EmployersPara employees={resumePara} />
             <RegisterTag />
             <AvailableTag bgColor="lightgrey" />

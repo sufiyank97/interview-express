@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, EmployersPara, ContactUs, BenifitsFirst, AvailableTag, Footer } from '../components/index'
+import { Header, EmployersPara, ContactUs, AvailableTag, Footer } from '../components/index'
 
 
 // private events Para images
@@ -22,7 +22,7 @@ const privateEventsPara = {
 const PrivateEvents = () => {
     return (
         <div>
-            <Header linkColor="white" bgColor="#abc720" />
+            <Header headerLinks="links2" bgColor="#abc720" />
             <EmployersPara employees={privateEventsPara} />
             <ContactUs />
             <AvailableTag bgColor="white" />
