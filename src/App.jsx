@@ -15,14 +15,13 @@ const VirtualEvent = lazy(() => import('./pages/index').then((module) => ({ defa
 const JobFairCalendar = lazy(() => import('./pages/index').then((module) => ({ default: module.JobFairCalendar })))
 
 
-// const { HomePage, EmployersPage, RecruitersPage, JobSeekers, ResumePage, PrivateEvents, JobFair, VirtualEvent, JobFairCalendar } = lazy(() => import('./pages/index'))
 // Scss File
 import './app.scss'
 const App = () => {
     return (
         <Router>
             <Switch>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<div></div>}>
                     <Route exact path="/" component={HomePage} />
                     <Route path="/employers" component={EmployersPage} />
                     <Route path="/job-seekers" component={JobSeekers} />
