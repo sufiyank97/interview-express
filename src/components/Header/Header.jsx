@@ -28,19 +28,20 @@ const Header = (props) => {
         //     </div>
         // </header>
         <Navbar expand="lg">
-            <Navbar.Brand href="/">
+            <Link to="/" className="navbar-brand">
                 <img
                     alt=""
                     src={Logo}
                     className="d-inline-block align-top"
                 />
-            </Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto employer-header" style={{ backgroundColor: bgColor }}>
-                    <Nav.Link href="/job-seekers" style={{ color: linkColor }}>Job Seekers</Nav.Link>
-                    <Nav.Link href="/employers" style={{ color: linkColor }}>Employers</Nav.Link>
-                    <Nav.Link href="/recruiters" style={{ color: linkColor }}>Recruiters</Nav.Link>
+                    <Link to="/job-seekers" className="nav-link" style={{ color: linkColor }}>Job Seekers</Link>
+                    <Link to="/employers" className="nav-link" style={{ color: linkColor }}>Employers</Link>
+                    <Link to="/recruiters" className="nav-link" style={{ color: linkColor }}>Recruiters</Link>
+
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

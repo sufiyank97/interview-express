@@ -8,16 +8,18 @@ import { HomePage, EmployersPage, RecruitersPage, JobSeekers, ResumePage, Privat
 import './app.scss'
 const App = () => {
     return (
-        <Router basename='/'>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/employers" component={EmployersPage} />
-            <Route exact path="/job-seekers" component={JobSeekers} />
-            <Route exact path="/private-events" component={PrivateEvents} />
-            <Route exact path="/job-fairs" component={JobFair} />
-            <Route exact path="/virtual-events" component={VirtualEvent} />
-            <Route exact path="/resume" component={ResumePage} />
-            <Route exact path="/recruiters" component={RecruitersPage} />
-            <Route exact path="/job-fair-calendar" component={JobFairCalendar} />
+        <Router>
+            <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route path="/employers" component={EmployersPage} />
+                <Route path="/job-seekers" component={JobSeekers} />
+                <Route path="/private-events" component={PrivateEvents} />
+                <Route path="/job-fairs" component={JobFair} />
+                <Route path="/virtual-events" component={VirtualEvent} />
+                <Route path="/resume" component={ResumePage} />
+                <Route path="/recruiters" component={RecruitersPage} />
+                <Route path="/job-fair-calendar" component={JobFairCalendar} />
+            </Switch>
 
         </Router>
     )
