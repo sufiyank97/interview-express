@@ -66,12 +66,13 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'build'), // change this
-        publicPath: '/',
+        // publicPath: '/',
         filename: 'bundle.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve('./build/index.html'),
+            template: path.resolve(__dirname, 'build/index.html'),
+            filename: 'index.html'
         }),
     ]
 }
