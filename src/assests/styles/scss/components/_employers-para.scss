@@ -6,6 +6,9 @@
     
     &-text{
         width: 45%;
+        h1{
+            font-weight: bold;
+        }
         @include media('<tablet'){
             width: 100%;
             display: flex;

@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import { Header, EmployersPara, RegisterTag, Benifits, AvailableTag, Faq, Footer } from '../components/index'
+import { Header, EmployersPara, RegisterTag, Benifits, AvailableTag, RegisterJobFair, Footer } from '../components/index'
 
 
 // job-seekers Para images
@@ -48,73 +48,75 @@ const resumeBenifits = {
     name: "Features",
     image1: {
         image: benifitsImage1.default,
-        title: 'Unlimited Access',
-        desc: `Access global virtual job fairs and gain access to hundreds of employers.  Browse job openings,  interview directly, get matched, and receive offers in the same platform.`
+        title: 'Multi Device Ready',
+        desc: `Access and share your resume and have it look professional from any device.`
     },
     image2: {
         card: true,
-        image: benifitsImage2.default,
-        title: 'Connect with Recruiters',
-        desc: `Create your customized virtual mobile resume.  Quickly create a digital QR code link to a dynamic customized resume that showcases your skills (via video, audio, portfolio, and/or links)`
+        image: resbenifitsImage2.default,
+        title: 'Sharing Using Multiple Format',
+        desc: `Easily share you resume using any of the following formats: Email, PDF, SMS, QR Code, e-card, API ready link, etc... Over 25 sharing formats.`
     },
     image3: {
         card: true,
-        image: benifitsImage3.default,
-        title: 'Build your digital mobile ready resume',
-        desc: `Create your virtual mobile resume/website Quickly create a digital QR code link to a dynamic customized resumes that showcases your skills (via video, audio, portfolio, links)`
+        image: resbenifitsImage3.default,
+        title: 'Tailor and Customize',
+        desc: `Make your resume your own by building the story that tells your story.`
     },
     image4: {
         image: benifitsImage4.default,
-        title: 'Other features from InterviewXpress',
-        desc: `Access global virtual job fairs and gain access to hundreds of employers.  Browse job openings,  interview directly, get matched, and receive offers in the same platform.`
+        title: 'Tons of story elements...',
+        desc: `Tell your story with our story builder and create the most unique resume format that is readable and searchable by the latest software.`
     },
     image5: {
         card: true,
-        image: benifitsImage5.default,
-        title: 'Build your digital mobile ready resume',
-        desc: `Create your virtual mobile resume/website Quickly create a digital QR code link to a dynamic customized resumes that showcases your skills (via video, audio, portfolio, links)`
+        image: resbenifitsImage5.default,
+        title: 'API Ready',
+        desc: `Yes, your resume now has an API!`
     },
     image6: {
         card: true,
-        image: benifitsImage6.default,
+        image: resbenifitsImage6.default,
         cImage: resbenifitsImage7.default,
-        title: 'Build your digital mobile ready resume',
-        desc: `Create your virtual mobile resume/website Quickly create a digital QR code link to a dynamic customized resumes that showcases your skills (via video, audio, portfolio, links)`
+        title: 'Custom domain name',
+        desc: `Create you custom domain to share your
+        resume`
     },
     allImages: [
         {
             image: benifitsImage1.default,
-            title: 'Unlimited Access',
+            title: 'Multi Device Ready',
             desc: `Access global virtual job fairs and gain access to hundreds of employers.  Browse job openings,  interview directly, get matched, and receive offers in the same platform.`
         },
         {
             card: true,
             image: resbenifitsImage2.default,
-            title: 'Connect with Recruiters',
-            desc: `Create your customized virtual mobile resume.  Quickly create a digital QR code link to a dynamic customized resume that showcases your skills (via video, audio, portfolio, and/or links)`
+            title: 'Sharing Using Multiple Format',
+            desc: `Easily share you resume using any of the following formats: Email, PDF, SMS, QR Code, e-card, API ready link, etc... Over 25 sharing formats.`
         },
         {
             card: true,
             image: resbenifitsImage3.default,
-            title: 'Build your digital mobile ready resume',
-            desc: `Create your virtual mobile resume/website Quickly create a digital QR code link to a dynamic customized resumes that showcases your skills (via video, audio, portfolio, links)`
+            title: 'Tailor and Customize',
+            desc: `Make your resume your own by building the story that tells your story.`
         },
         {
             image: benifitsImage4.default,
-            title: 'Other features from InterviewXpress',
-            desc: `Access global virtual job fairs and gain access to hundreds of employers.  Browse job openings,  interview directly, get matched, and receive offers in the same platform.`
+            title: 'Tons of story elements...',
+            desc: `Tell your story with our story builder and create the most unique resume format that is readable and searchable by the latest software.`
         },
         {
             card: true,
             image: resbenifitsImage5.default,
-            title: 'Build your digital mobile ready resume',
-            desc: `Create your virtual mobile resume/website Quickly create a digital QR code link to a dynamic customized resumes that showcases your skills (via video, audio, portfolio, links)`
+            title: 'API Ready',
+            desc: `Yes, your resume now has an API!`
         },
         {
             card: true,
             image: resbenifitsImage6.default,
-            title: 'Build your digital mobile ready resume',
-            desc: `Create your virtual mobile resume/website Quickly create a digital QR code link to a dynamic customized resumes that showcases your skills (via video, audio, portfolio, links)`,
+            title: 'Custom domain name',
+            desc: `Create you custom domain to share your
+        resume`,
             cImage: resbenifitsImage7.default
         }
     ]
@@ -122,12 +124,13 @@ const resumeBenifits = {
 const ResumePage = () => {
     return (
         <div>
-            <Header linkColor="white" bgColor="#abc720" />
+            <Header linkColor="white" bgColor="#006eab" />
             <EmployersPara employees={resumePara} />
             <RegisterTag />
             <AvailableTag bgColor="lightgrey" />
             <Benifits benifits={resumeBenifits} />
             <AvailableTag bgColor="white" />
+            <RegisterJobFair />
             <Footer />
         </div>
     )

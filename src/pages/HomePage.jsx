@@ -34,6 +34,7 @@ const employers = [
 const HomePage = () => {
     return (
         <>
+
             <Header linkColor="white" />
             <div className="data data-first" >
                 <div className="data-text1">

@@ -4,6 +4,7 @@ import Footer from './Footer/Footer'
 import FlatDesign from './FlatDesign/FlatDesign'
 import AvailableTag from './AvailableTag/AvailableTag'
 import RegisterTag from './RegisterTag/RegisterTag'
+import RegisterJobFair from './RegisterTag/RegisterJobFair'
 
 import EmployersPara from './Employers/EmployersPara'
 import Benifits from './Employers/Benifits'
@@ -31,5 +32,6 @@ export {
     Faq,
     BenifitsFirst,
     ContactUs,
-    VirtualPara
+    VirtualPara,
+    RegisterJobFair
 }

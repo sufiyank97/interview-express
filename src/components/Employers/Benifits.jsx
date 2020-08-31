@@ -16,7 +16,7 @@ const Benifits = ({ benifits }) => {
                             <h3>{benifits.image1.title}</h3>
                         </div>
                         <div className="benefits-box-1-text-box">
-                            <p>
+                            <p className="global-para">
                                 {benifits.image1.desc}
                             </p>
                         </div>
@@ -49,7 +49,7 @@ const Benifits = ({ benifits }) => {
                                                 <h3>{allImage.title}</h3>
                                             </div>
                                             <div className="benefits-res-box-card-para">
-                                                <p>
+                                                <p className="global-para">
                                                     {allImage.desc}
                                                 </p>
                                             </div>
@@ -76,9 +76,23 @@ const Benifits = ({ benifits }) => {
                                                         <h3>{allImage.title}</h3>
                                                     </div>
                                                     <div className="benefits-res-box-1-text-para">
-                                                        <p>
-                                                            {allImage.desc}
-                                                        </p>
+                                                        {
+                                                            Array.isArray(allImage.desc) ? (
+                                                                <ul className="benefits-list">
+                                                                    {
+                                                                        allImage.desc.map((des, i) => (
+                                                                            <li key={i}>
+                                                                                {des.name}
+                                                                            </li>
+                                                                        ))
+                                                                    }
+                                                                </ul>
+                                                            ) : (
+                                                                    <p className="global-para">
+                                                                        {allImage.desc}
+                                                                    </p>
+                                                                )
+                                                        }
                                                     </div>
                                                 </div>
                                             </div>
@@ -91,17 +105,18 @@ const Benifits = ({ benifits }) => {
 
             {
                 (benifits.image2.card) ? (
-
                     <div className="benefits-recruiters">
                         <div className="benefits-recruiters-1-image">
                             <div className="benefits-recruiters-1-image-text">
                                 <div className="benefits-recruiters-1-image-text-box" style={{ borderRadius: '1rem' }}>
-                                    <div className="benefits-recruiters-1-image-text-box-image">
-                                        <img src={benifits.image2.image} alt="" />
+                                    <div className="benefits-recruiters-1-image-text-box-img">
+                                        <div className="benefits-recruiters-1-image-text-box-img-image">
+                                            <img src={benifits.image2.image} alt="" />
+                                        </div>
                                     </div>
                                     <div className="benefits-recruiters-1-image-text-box-title">
                                         <h3>{benifits.image2.title}</h3>
-                                        <p>
+                                        <p className="global-para">
                                             {benifits.image2.desc}
                                         </p>
                                     </div>
@@ -117,7 +132,7 @@ const Benifits = ({ benifits }) => {
                                         <h3>{benifits.image2.title}</h3>
                                     </div>
                                     <div className="benefits-recruiters-1-image-text-box">
-                                        <p>
+                                        <p className="global-para">
                                             {benifits.image2.desc}
                                         </p>
                                     </div>
@@ -136,12 +151,14 @@ const Benifits = ({ benifits }) => {
                         <div className="benefits-box-1">
 
                             <div className="benefits-box-1-text-box">
-                                <div className="benefits-box-1-text-box-image">
-                                    <img src={benifits.image3.image} alt="" />
+                                <div className="benefits-box-1-text-box-img">
+                                    <div className="benefits-box-1-text-box-img-image">
+                                        <img src={benifits.image3.image} alt="" />
+                                    </div>
                                 </div>
                                 <div className="benefits-box-1-text-box-title">
                                     <h3>{benifits.image3.title}</h3>
-                                    <p>
+                                    <p className="global-para">
                                         {benifits.image3.desc}
                                     </p>
                                 </div>
@@ -159,7 +176,7 @@ const Benifits = ({ benifits }) => {
                                         <h3>{benifits.image3.title}</h3>
                                     </div>
                                     <div className="benefits-box-1-text-box">
-                                        <p>
+                                        <p className="global-para">
                                             {benifits.image3.desc}
                                         </p>
                                     </div>
@@ -175,9 +192,23 @@ const Benifits = ({ benifits }) => {
                             <h3>{benifits.image4.title}</h3>
                         </div>
                         <div className="benefits-recruiters-1-image-text-box">
-                            <p>
-                                {benifits.image4.desc}
-                            </p>
+                            {
+                                Array.isArray(benifits.image4.desc) ? (
+                                    <ul className="benefits-list">
+                                        {
+                                            benifits.image4.desc.map((des, i) => (
+                                                <li key={i}>
+                                                    {des.name}
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                ) : (
+                                        <p className="global-para">
+                                            {benifits.image4.desc}
+                                        </p>
+                                    )
+                            }
                         </div>
                     </div>
                     <img src={benifits.image4.image} alt="" />
@@ -194,12 +225,14 @@ const Benifits = ({ benifits }) => {
                         <div className="benefits-box-1">
 
                             <div className="benefits-box-1-text-box">
-                                <div className="benefits-box-1-text-box-image">
-                                    <img src={benifits.image5.image} alt="" />
+                                <div className="benefits-box-1-text-box-img">
+                                    <div className="benefits-box-1-text-box-img-image">
+                                        <img src={benifits.image5.image} alt="" />
+                                    </div>
                                 </div>
                                 <div className="benefits-box-1-text-box-title">
                                     <h3>{benifits.image5.title}</h3>
-                                    <p>
+                                    <p className="global-para">
                                         {benifits.image5.desc}
                                     </p>
                                 </div>
@@ -215,17 +248,19 @@ const Benifits = ({ benifits }) => {
                         <div className="benefits-recruiters" style={{ marginTop: '4rem' }}>
                             <div className="benefits-recruiters-1-image">
                                 <div className="benefits-recruiters-1-image-text">
-                                    <div className="benefits-recruiters-1-image-text-box" style={{ borderRadius: '1rem',flexDirection:'column' }}>
-                                    <div className="benefits-res-box-card-comming" style={{marginTop:'-1.5rem'}}>
-                                        <img src={benifits.image6.cImage} alt="" />
-                                    </div>
-                                        <div style={{display:'flex'}}>
-                                            <div className="benefits-recruiters-1-image-text-box-image">
-                                                <img src={benifits.image6.image} alt="" />
+                                    <div className="benefits-recruiters-1-image-text-box" style={{ borderRadius: '1rem', flexDirection: 'column' }}>
+                                        <div className="benefits-res-box-card-comming" style={{ marginTop: '-1.5rem' }}>
+                                            <img src={benifits.image6.cImage} alt="" />
+                                        </div>
+                                        <div style={{ display: 'flex' }}>
+                                            <div className="benefits-recruiters-1-image-text-box-img">
+                                                <div className="benefits-recruiters-1-image-text-box-img-image">
+                                                    <img src={benifits.image6.image} alt="" />
+                                                </div>
                                             </div>
                                             <div className="benefits-recruiters-1-image-text-box-title">
                                                 <h3>{benifits.image6.title}</h3>
-                                                <p>
+                                                <p className="global-para">
                                                     {benifits.image6.desc}
                                                 </p>
                                             </div>
@@ -238,7 +273,7 @@ const Benifits = ({ benifits }) => {
                     </>
                 ) : <Fragment />
             }
-        </div>
+        </div >
     )
 }
 

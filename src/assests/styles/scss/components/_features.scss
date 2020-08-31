@@ -7,6 +7,7 @@
     background-color: #f3f3f3;
     h1{
         margin-bottom: 2rem;
+        font-weight: 700;
     }
     &-interview{
         display: flex;
@@ -32,6 +33,9 @@
     padding: 1rem;
     background-color: white;
     border-radius: 1rem;
+    h1{
+        font-weight: 500;
+    }
 }
 
 .features-res{

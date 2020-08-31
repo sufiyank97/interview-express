@@ -23,6 +23,7 @@ $breakpoints: (
 @import './components/contact-us';
 @import './components/benefits-first';
 @import './components/virtual-para';
+@import './components/register';
 
 // global
 @import './pages/global';
@@ -31,3 +32,6 @@ $breakpoints: (
 // pages
 @import './pages/home-page';
 @import './pages/employers-page';
+
+// Fonts
+@import './utils/font';

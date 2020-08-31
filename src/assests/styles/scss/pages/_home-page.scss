@@ -17,6 +17,10 @@
     }
 margin-bottom: 2rem;
     &-text{
+
+        h1{
+            font-weight: bold;
+        }
         margin-top: 1rem;
         padding-left: 5rem;
         display: flex;
@@ -27,6 +31,9 @@ margin-bottom: 2rem;
         }
     }
     &-text1{
+        h1{
+            font-weight: bold;
+        }
         display: flex;
         flex-direction: column;
         padding-left: 5rem;

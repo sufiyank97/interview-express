@@ -1,0 +1,32 @@
+.register-job-fair{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #abc720;
+    padding: 3rem;
+    @include media('<tablet'){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    &-button{
+        button{
+            padding: 1rem 3rem;
+            background-color: white;
+            color: #abc720;
+            font-weight: 600;
+            border: none;
+            border-radius: 2rem;
+            @include media('<tablet'){
+                font-weight: 400;
+                margin-top: 1rem;
+            }
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+
+    &-para{
+        color: white;
+    }
+}

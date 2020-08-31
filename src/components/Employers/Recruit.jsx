@@ -4,6 +4,7 @@ const bestCandidatesImg = require('../../assests/images/employers/recruit/best-c
 
 const Recruit = () => {
     return (
+        
         <div className="recruit">
             <h1 className="recruit-title global-title">Recruit from anywhere.</h1>
             <div className="recruit-card-1">

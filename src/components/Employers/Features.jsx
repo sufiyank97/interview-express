@@ -26,7 +26,7 @@ const featuresArray = [
 const Features = () => {
     return (
         <div className="features">
-            <h1>Platform Features:</h1>
+            <h1 className="global-title">Platform Features:</h1>
             <div className="features-interview">
                 <div className="features-interview-image">
                     <img src={interviewImg.default} alt="" />

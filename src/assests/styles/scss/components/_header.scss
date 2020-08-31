@@ -14,6 +14,19 @@
         }
     }
 
+    &-toggler{
+        @include media('<tablet'){
+            display: flex;
+            align-self: center;
+            border: none;
+            font-size: 2rem;
+
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+
     &-collapse{
         @include media('>tablet'){
             margin-right: -1rem;
@@ -68,6 +81,8 @@
     border-bottom-left-radius: 3rem;
     @include media('<tablet'){
         background-color: transparent !important;
+        height: 10rem;
+        width: auto;
     }
 }
 

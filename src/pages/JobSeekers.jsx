@@ -38,20 +38,24 @@ const jobSeekersBenifits = {
     },
     image2: {
         card: true,
-        image: benifitsImage2.default,
+        image: resbenifitsImage2.default,
         title: 'Connect with Recruiters',
         desc: `Create your customized virtual mobile resume.  Quickly create a digital QR code link to a dynamic customized resume that showcases your skills (via video, audio, portfolio, and/or links)`
     },
     image3: {
         card: true,
-        image: benifitsImage3.default,
+        image: resbenifitsImage3.default,
         title: 'Build your digital mobile ready resume',
         desc: `Create your virtual mobile resume/website Quickly create a digital QR code link to a dynamic customized resumes that showcases your skills (via video, audio, portfolio, links)`
     },
     image4: {
         image: benifitsImage4.default,
         title: 'Other features from InterviewXpress',
-        desc: `Access global virtual job fairs and gain access to hundreds of employers.  Browse job openings,  interview directly, get matched, and receive offers in the same platform.`
+        desc: [
+            { name: 'Spend your time more efficiently' },
+            { name: 'Schedule more interviews with opportunities better suited to your skill set via   Smart Matching' },
+            { name: 'Receive feedback to improve your virtual interviewing skills' },
+        ]
     },
     allImages: [
         {
@@ -74,14 +78,18 @@ const jobSeekersBenifits = {
         {
             image: benifitsImage4.default,
             title: 'Other features from InterviewXpress',
-            desc: `Access global virtual job fairs and gain access to hundreds of employers.  Browse job openings,  interview directly, get matched, and receive offers in the same platform.`
+            desc: [
+                { name: 'Spend your time more efficiently' },
+                { name: 'Schedule more interviews with opportunities better suited to your skill set via   Smart Matching' },
+                { name: 'Receive feedback to improve your virtual interviewing skills' },
+            ]
         },
     ]
 }
 const JobSeekers = () => {
     return (
         <div>
-            <Header linkColor="white" bgColor="#abc720" />
+            <Header linkColor="white" bgColor="#006eab" />
             <EmployersPara employees={jobSeekersPara} />
             <RegisterTag />
             <AvailableTag bgColor="lightgrey" />

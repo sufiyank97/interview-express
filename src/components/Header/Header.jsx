@@ -38,9 +38,9 @@ const Header = (props) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto employer-header" style={{ backgroundColor: bgColor }}>
-                    <Nav.Link href="/job-seekers">Job Seekers</Nav.Link>
-                    <Nav.Link href="/employers">Employers</Nav.Link>
-                    <Nav.Link href="/recruiters">Recruiters</Nav.Link>
+                    <Nav.Link href="/job-seekers" style={{ color: linkColor }}>Job Seekers</Nav.Link>
+                    <Nav.Link href="/employers" style={{ color: linkColor }}>Employers</Nav.Link>
+                    <Nav.Link href="/recruiters" style={{ color: linkColor }}>Recruiters</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

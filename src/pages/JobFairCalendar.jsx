@@ -11,7 +11,7 @@ const locationImg = require('../assests/images/job-fair-calendar/location.png')
 const JobFairCalendar = () => {
     return (
         <div className="job-fair-calendar">
-            <Header linkColor="white" bgColor="#abc720" />
+            <Header linkColor="white" bgColor="#006eab" />
             <div className="job-fair-calendar-para">
                 <div className="job-fair-calendar-para-text">
                     <h1>Job Fair Calendar</h1>

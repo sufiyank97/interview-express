@@ -1,5 +1,8 @@
 .faq{
 
+    h1{
+        font-weight: 700;
+    }
     background-color: #f3f3f3;
     padding:2rem 5rem;
     @include media('<phone'){
@@ -15,6 +18,9 @@
         margin: 2rem 0 2rem;
         @include media('<tablet'){
             display: none;       
+        }
+        h1{
+            font-weight: 500;
         }
     }
 
@@ -34,6 +40,7 @@
             display: flex;
             h1{
                 font-size: 2rem !important;
+                font-weight: 500;
                 @include media('<phone'){
                     font-size: 1.6rem !important;
                 }

@@ -1,7 +1,9 @@
 .benefits{
 padding-top: 3rem;
+
 &-box{
     h1{
+        font-weight: bold;
         margin-bottom: 2rem;
     }
     margin-left: 5rem;  
@@ -18,6 +20,9 @@ padding-top: 3rem;
             &-heading{
                 margin-bottom: 20px;
                 padding-left: 2rem;
+                h3{
+                    font-weight: 700;
+                }
             }
             &-box{
                 padding: .9rem;
@@ -29,14 +34,20 @@ padding-top: 3rem;
                 background: #f3f3f3;
                 border-radius: 1rem;
                 display: flex;
-                &-image{
-                    background-color: white;
-                    padding: 2rem;
+                &-img{
                     display: flex;
-                    justify-content: center;
-                    border-radius: 1rem;
-                    img{
-                        width: 150%;
+                    align-items: center;
+                    &-image{
+                        background-color: white;
+                        padding: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        border-radius: 1rem;
+                        align-items: center;
+                        img{
+                            // width: 150%;
+                            height: fit-content;
+                        }
                     }
                 }
                 &-title{
@@ -53,6 +64,7 @@ padding-top: 3rem;
 
     &-res-box{
         h1{
+            font-weight: bold;
             padding-left: 5rem;
             @include media('<phone'){
                 padding-left: 2rem;
@@ -128,6 +140,9 @@ padding-top: 3rem;
                 margin-right: -25px;
                 &-heading{
                     margin-bottom: 20px;
+                    h3{
+                        font-weight: 700;
+                    }
                 }
                 &-box{
                     padding: 1rem;
@@ -139,15 +154,20 @@ padding-top: 3rem;
                     background: #f3f3f3;
                     border-bottom-left-radius: 1rem;
                     display: flex;
-
-                    &-image{
-                        background-color: white;
-                        padding: 2rem;
+                    &-img{
                         display: flex;
-                        justify-content: center;
-                        border-radius: 1rem;
-                        img{
-                            width: 150%;
+                        align-items: center;
+                        &-image{
+                            background-color: white;
+                            padding: 1rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 1rem;
+                            img{
+                                // width: 150%;
+                                height: fit-content;
+                            }
                         }
                     }
                     &-title{
@@ -205,16 +225,35 @@ padding-top: 3rem;
     }
 }
 
-@include media('<tablet'){
+@include media('<desktop'){
     .benefits-box,.entry-box,.entry-box1,.benefits-recruiters{
         display: none;
     }
 }
 
-@include media('>tablet'){
+@include media('>desktop'){
     .benefits-res-box{
         display: none;
     }
 }
 
+.benefits-list{
+    
+        list-style: none;
+        li{
+            color: #888888;
+        }
+}
+.benefits-list li::before{
+    color:#abc720 !important;
+    content: "\2022";
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
 
+.global-para{
+    color:#888888
+}

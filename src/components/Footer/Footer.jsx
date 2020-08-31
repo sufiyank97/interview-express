@@ -52,7 +52,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12 col-lg-4 col-sm-12 mr-auto">
+                    <div className="col-md-12 col-lg-6 col-sm-12 mr-auto">
                         <div className="footer-left-social-links">
                             <img src={facebookImg.default} alt="" />
                             <img src={twitterImg.default} alt="" />
@@ -60,7 +60,7 @@ const Footer = () => {
                             <img src={linkdinImg.default} alt="" />
                         </div>
                         <div className="footer-left-links ">
-                            <ul className="list-unstyled">
+                            <ul className="list-unstyled mx-auto">
                                 <li>
                                     <Link to="/employers">
                                         Employers
@@ -124,7 +124,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-md-5 col-lg-5">
+                    <div className="col-md-12 col-lg-6">
                         <div className="footer-right-image">
                             <img src={bgImage.default} alt="" />
                             <p>Made in Austin. All member work copyright of respective owner, otherwise © 2020 InterviewXpress</p>
