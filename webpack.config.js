@@ -1,15 +1,29 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     devServer: {
-        contentBase: path.resolve(__dirname, './build'),
+        contentBase: path.resolve(__dirname, 'build'),
+        // port: 0,
+        // open: true,
+        // hot: true,
+        // compress: true,
+        // stats: 'errors-warnings',
+        // watchContentBase: true,
+        // historyApiFallback: true
+        compress: true,
         port: 0,
         open: true,
         hot: true,
-        compress: true,
         stats: 'errors-warnings',
         watchContentBase: true,
-        historyApiFallback: true
+        //might add this when I will add start up script!
+        //writeToDisk: true, 
+        //https: true
+        overlay: {
+            warnings: true,
+            errors: true
+        },
     },
     entry: path.resolve(__dirname, './src/App.jsx'),
     module: {
@@ -66,10 +80,11 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'build'), // change this
-        // publicPath: '/',
+        publicPath: '/',
         filename: 'bundle.js'
     },
     plugins: [
+        // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'build/index.html'),
             filename: 'index.html'
