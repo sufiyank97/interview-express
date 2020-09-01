@@ -14,16 +14,17 @@ const featuresArray = [
     },
     {
         image: resonlineBroImg.default,
-        title: 'One-on-One',
-        desc: `Add screener questions, then interview one-on-one, one-to-many or many-to-one. The platform allows for team collaboration as your interactions seamlessly flow from from interview to hire as quickly as you need.`
+        title: 'Multi-platform access',
+        desc: `Our mobile app was built with a unique process in mind to accelerate your interviewing process. Access your information from multiple devices to make your job search seamless.`
     },
     {
         image: resonlineImg.default,
-        title: 'One-on-One',
-        desc: `Add screener questions, then interview one-on-one, one-to-many or many-to-one. The platform allows for team collaboration as your interactions seamlessly flow from from interview to hire as quickly as you need.`
+        title: 'Feedback and candidate export',
+        desc: `Collect feedback from your team and priority candidates, rate them by experience, communications, leadership and other skill groups. Use our integration tools to export or directly import into an ATS tool.`
     }
 ]
 const Features = () => {
+
     return (
         <div className="features">
             <h1 className="global-title">Platform Features:</h1>
@@ -41,9 +42,9 @@ const Features = () => {
 
             <div className="features-interview">
                 <div className="features-interview-card">
-                    <div className="card-box">
-                        <h1>One-on-One</h1>
-                        <p>Add screener questions, then interview one-on-one, one-to-many or many-to-one. The platform allows for team collaboration as your interactions seamlessly flow from from interview to hire as quickly as you need.</p>
+                    <div className="card-box" style={{ boxShadow: '0 50px 50px 0 rgba(171, 199, 32, 0.3)' }}>
+                        <h1>Multi-platform access</h1>
+                        <p>Our mobile app was built with a unique process in mind to accelerate your interviewing process. Access your information from multiple devices to make your job search seamless.</p>
                     </div>
                 </div>
                 <div className="features-interview-image">
@@ -57,8 +58,8 @@ const Features = () => {
                 </div>
                 <div className="features-interview-card">
                     <div className="card-box">
-                        <h1>One-on-One</h1>
-                        <p>Add screener questions, then interview one-on-one, one-to-many or many-to-one. The platform allows for team collaboration as your interactions seamlessly flow from from interview to hire as quickly as you need.</p>
+                        <h1>Feedback and candidate export</h1>
+                        <p>Collect feedback from your team and priority candidates, rate them by experience, communications, leadership and other skill groups. Use our integration tools to export or directly import into an ATS tool.</p>
                     </div>
                 </div>
             </div>
@@ -71,12 +72,23 @@ const Features = () => {
                             <img src={feature.image} alt="" />
                         </div>
                         <div className="features-res-para">
-                            <div className="card-box">
-                                <h1>{feature.title}</h1>
-                                <p>
-                                    {feature.desc}
-                                </p>
-                            </div>
+                            {
+                                (i === 1) ? (
+                                    <div className="card-box" style={{ boxShadow: '0 50px 50px 0 rgba(171, 199, 32, 0.3)' }}>
+                                        <h1>{feature.title}</h1>
+                                        <p>
+                                            {feature.desc}
+                                        </p>
+                                    </div>
+                                ) : (
+                                        <div className="card-box">
+                                            <h1>{feature.title}</h1>
+                                            <p>
+                                                {feature.desc}
+                                            </p>
+                                        </div>
+                                    )
+                            }
                         </div>
                     </div>
                 ))

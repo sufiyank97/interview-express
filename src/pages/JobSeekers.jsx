@@ -95,6 +95,7 @@ const JobSeekers = () => {
             <RegisterTag />
             <AvailableTag bgColor="lightgrey" />
             <Benifits benifits={jobSeekersBenifits} />
+            <RegisterTag />
             <JobFairPara />
             <RegisterTag />
             <AvailableTag bgColor="white" />

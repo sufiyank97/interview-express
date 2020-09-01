@@ -32,6 +32,7 @@ const employers = [
 ]
 
 
+
 const HomePage = () => {
     return (
         <>
@@ -51,7 +52,7 @@ const HomePage = () => {
                             ))
                         }
                     </ListGroup>
-                    <div className="data-arrow">
+                    <div className="data-arrow" style={{ marginTop: '-3rem' }}>
                         <img src={arrowGreen} />
                     </div>
                 </div>

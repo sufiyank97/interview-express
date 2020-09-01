@@ -52,12 +52,12 @@ const Footer = ({ newPosition }) => {
         <footer className="footer" style={{ position: newPosition }}>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12 col-lg-6 col-sm-12 mr-auto">
+                    <div className="col-md-12 col-lg-6 col-sm-12 ">
                         <div className="footer-left-social-links">
-                            <img src={facebookImg.default} alt="" />
-                            <img src={twitterImg.default} alt="" />
-                            <img src={instaImg.default} alt="" />
-                            <img src={linkdinImg.default} alt="" />
+                            <img src={facebookImg.default} className="fb-img" alt="" />
+                            <img src={twitterImg.default} className="social-img" alt="" />
+                            <img src={instaImg.default} className="social-img" alt="" />
+                            <img src={linkdinImg.default} className="social-img" alt="" />
                         </div>
                         <div className="footer-left-links ">
                             <ul className="list-unstyled mx-auto">

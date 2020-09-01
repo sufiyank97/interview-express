@@ -8,21 +8,30 @@
     h1{
         margin-bottom: 2rem;
         font-weight: 700;
+        font-size: 35px !important;
     }
     &-interview{
         display: flex;
         
         justify-content: space-evenly;
         &-image{
+            display: inherit;
+            justify-content: center;
+            flex: 1;
             width: 70%;
-            // img{
-            //     width: 100%;
-            // }
+            img{
+                width: 60%;
+            }
         }
         &-card{
+            flex: 1;
             padding: 2rem;
             display: flex;
             align-items: center;
+            p{
+                color: #b1aaaa;
+            }
+            // margin: 0 3rem;
         }
     }
 }
@@ -30,15 +39,17 @@
 
 .card-box{
     box-shadow: 0 50px 50px 0 rgba(0, 111, 173, 0.1);
-    padding: 1rem;
+    padding: 2rem;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 2rem;
     h1{
-        font-weight: 500;
+        font-weight: 700;
+        font-size: 30px !important;
     }
 }
 
 .features-res{
+    margin-bottom: 3rem;
     &-image{
         margin-bottom: 1rem;
         display: flex;
@@ -57,7 +68,10 @@
     }
 
     &-para{
-        margin-bottom: 2rem;
+        
+        p{
+            color: #b1aaaa;
+        }
     }
 }
 

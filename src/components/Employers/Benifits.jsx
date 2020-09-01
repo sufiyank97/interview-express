@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 
 
-
 const Benifits = ({ benifits }) => {
     return (
         <div className="benefits">
@@ -166,7 +165,7 @@ const Benifits = ({ benifits }) => {
                         </div>
                     </div>
                 ) : (
-                        <div className="benefits-box" style={{ marginTop: '-50px' }}>
+                        <div className="benefits-box" style={{ marginTop: '-100px' }}>
                             <div className="benefits-box-1">
                                 <div className="benefits-box-1-image">
                                     <img src={benifits.image3.image} alt="" />
@@ -185,7 +184,7 @@ const Benifits = ({ benifits }) => {
                         </div>
                     )
             }
-            <div className="benefits-recruiters" style={{ marginTop: (benifits.image2.card) ? '20px' : '-200px' }}>
+            <div className="benefits-recruiters" style={{ marginTop: (benifits.image2.card) ? '80px' : '-180px' }}>
                 <div className="benefits-recruiters-1-image">
                     <div className="benefits-recruiters-1-image-text">
                         <div className="benefits-recruiters-1-image-text-heading">

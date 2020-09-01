@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 
 const EmployersPara = (props) => {
 
+
     const { employees, sms } = { ...props }
     return (
         <>
@@ -93,5 +94,6 @@ const EmployersPara = (props) => {
         </>
     )
 }
+
 
 export default EmployersPara

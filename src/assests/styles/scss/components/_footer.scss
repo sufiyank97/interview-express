@@ -107,12 +107,24 @@
         img{
             margin-right: 2rem;
         }
+        .fb-img{
+            width: 3%;
+            @include media('<phone'){
+                width: 5%;
+            }
+        }
+        .social-img{
+            width: 5%;
+            @include media('<phone'){
+                width: 9%;
+            }
+        }
         padding-bottom: 1rem;
         @include media('<desktop'){
             justify-content: center;
         }
         @include media('<tablet'){
-            justify-content: space-evenly;
+            justify-content: center;
         }
         @include media('>widescreen'){
             margin-left: 3rem;
@@ -150,11 +162,15 @@
             text-align: center;
         }
         img{
-            width: 100%;
+            width: 50%;
             margin-bottom: 1rem;
             @include media('<tablet'){
                 width: 70%;
             }
+        }
+        p{
+            font-size: 1.1rem !important;
+            color: #888888;
         }
     }
 }

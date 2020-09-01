@@ -39,7 +39,6 @@ const FlatDesign = () => {
             </div>
 
 
-
             <div className="flat-design1">
                 <div className="flat-design1-events">
                     <div className="flat-design1-events-image">

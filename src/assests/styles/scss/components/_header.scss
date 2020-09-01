@@ -10,7 +10,12 @@
         flex: 1;
         img{
             width: 80%;
-            
+            @include media('<tablet'){
+                width: 60%;
+            }
+            @include media('<phone'){
+                width: 80%;
+            }
         }
     }
 
@@ -86,7 +91,7 @@
     border-bottom-left-radius: 3rem;
     @include media('<tablet'){
         background-color: transparent !important;
-        height: 10rem;
+        height: 12rem;
         width: auto;
     }
 }

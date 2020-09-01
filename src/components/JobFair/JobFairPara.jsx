@@ -5,11 +5,11 @@ const loactions = [
     { date: 'Tuesday, July 25th, 2020', locName: 'Chichago,Il' },
 ]
 const locationImg = require('../../assests/images/job-fair-calendar/location.png')
-const JobFairPara = () => {
+const JobFairPara = ({ title }) => {
     return (
         <div className="job-fair-calendar-para">
             <div className="job-fair-calendar-para-text">
-                <h1>Job Fair Calendar</h1>
+                <h1>{title}</h1>
                 {
                     loactions.map((location, i) => (
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const groupImg = require('../../assests/images/virtual-event/para/group.png')
-const recruitersImg = require('../../assests/images/virtual-event/para/recruiters1.png')
+// const recruitersImg = require('../../assests/images/virtual-event/para/recruiters1.png')
 const recruiters1Img = require('../../assests/images/virtual-event/para/recruiters2.png')
 
 const VirtualPara = () => {

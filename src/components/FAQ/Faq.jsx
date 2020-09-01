@@ -40,6 +40,7 @@ const Faq = () => {
                 ))
             }
 
+
             {
                 faqValues.map((faqValue, i) => (
                     <div className="faq-mobile-card" onClick={() => activeHandler(i)} key={i}>

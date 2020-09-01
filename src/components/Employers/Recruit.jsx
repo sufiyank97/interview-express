@@ -4,7 +4,6 @@ const bestCandidatesImg = require('../../assests/images/employers/recruit/best-c
 
 const Recruit = () => {
     return (
-
         <div className="recruit">
             <h1 className="recruit-title global-title">Recruit from anywhere.</h1>
             <div className="recruit-card-1">
@@ -38,13 +37,9 @@ const Recruit = () => {
 
             <div className="recruit-card-2">
                 <div className="recruit-card-2-box">
-                    <h1>Unlimited Access</h1>
-                    <h6>Centralize your team while recruiting from anywhere..</h6>
-                    <h6>
-                        Access over 250 candidates per event.
-                    </h6>
-                    <h6>
-                        The Events platform enables recruiters to view resumes and invite job seekers to interview.</h6>
+                    <h1>Find the best candidates</h1>
+                    <h6>Engage with candidates pre-, post- and during the event. Ask job seekers to apply to one or multiple positions. InterviewXpress Events can integrated with your ATS platform.</h6>
+
                 </div>
                 <div className="recruit-card-2-image">
                     <img src={bestCandidatesImg.default} alt="" />
@@ -56,13 +51,8 @@ const Recruit = () => {
                     <img src={bestCandidatesImg.default} alt="" />
                 </div>
                 <div className="recruit-res-1-box" style={{ boxShadow: '0 10px 0 0 #006fad' }}>
-                    <h1>Unlimited Access</h1>
-                    <h6>Centralize your team while recruiting from anywhere..</h6>
-                    <h6>
-                        Access over 250 candidates per event.
-                    </h6>
-                    <h6>
-                        The Events platform enables recruiters to view resumes and invite job seekers to interview.</h6>
+                    <h1>Find the best candidates</h1>
+                    <h6>Engage with candidates pre-, post- and during the event. Ask job seekers to apply to one or multiple positions. InterviewXpress Events can integrated with your ATS platform.</h6>
                 </div>
             </div>
         </div>
