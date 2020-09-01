@@ -91,7 +91,7 @@
     border-bottom-left-radius: 3rem;
     @include media('<tablet'){
         background-color: transparent !important;
-        height: 12rem;
+        height: 12rem !important;
         width: auto;
     }
 }

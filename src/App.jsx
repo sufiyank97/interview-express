@@ -20,7 +20,7 @@ const NoMatchPage = lazy(() => import('./pages/index').then(module => ({ default
 import './app.scss'
 const App = () => {
     return (
-        <Suspense fallback={<Fragment />}>
+        <Suspense fallback={<div>Loading...</div>}>
             <Router>
                 <Switch>
                     <Route exact path="/" component={HomePage} />
@@ -34,7 +34,6 @@ const App = () => {
                     <Route path="/job-fair-calendar" component={JobFairCalendar} />
                     <Route component={NoMatchPage} />
                 </Switch>
-
             </Router>
         </Suspense>
     )
