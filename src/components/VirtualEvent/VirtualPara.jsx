@@ -4,13 +4,14 @@ const groupImg = require('../../assests/images/virtual-event/para/group.png')
 // const recruitersImg = require('../../assests/images/virtual-event/para/recruiters1.png')
 const recruiters1Img = require('../../assests/images/virtual-event/para/recruiters2.png')
 
+
 const VirtualPara = () => {
     return (
         <>
             <div className="virtual-para">
                 <div className="virtual-para-text">
                     <div className="virtual-para-text-1">
-                        <h1>Virtual Event</h1>
+                        <h1 className="virtual-para-text-header">Virtual Event</h1>
                         <h1 className="virtual-para-text-quote">
                             Register via Mobile.
                     </h1>
@@ -45,7 +46,7 @@ const VirtualPara = () => {
                     <img src={recruiters1Img.default} alt="" />
                 </div>
                 <div className="virtual-mobile-text">
-                    <h1>Virtual Event</h1>
+                    <h1 className="virtual-para-text-header">Virtual Event</h1>
                     <div className="virtual-mobile-text-quote">
                         <h1 className="virtual-mobile-text-quote-h1">
                             Register via Mobile.

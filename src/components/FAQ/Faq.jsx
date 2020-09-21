@@ -30,7 +30,7 @@ const Faq = () => {
     }
     return (
         <div className="faq">
-            <h1>FAQ:</h1>
+            <h1 className="faq-h1">FAQ:</h1>
             {
                 faqValues.map((faqValue, i) => (
                     <div className="faq-card" key={i}>
@@ -39,6 +39,7 @@ const Faq = () => {
                     </div>
                 ))
             }
+
 
 
             {

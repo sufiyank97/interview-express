@@ -7,8 +7,8 @@
     &-text{
         width: 45%;
         h1{
-            font-weight: bold;
-            font-size: 35px !important;
+            font-family: 'BwModelica ExtraBold';
+            font-size: 35px;
         }
         @include media('<tablet'){
             width: 100%;
@@ -24,13 +24,14 @@
         }
         &-quote{
             margin-top: 3rem;
-            @include media('<phone'){
-                padding: 0rem 1rem 0rem;
-            }
             @include media('<tablet'){
                 padding: 0rem 2rem;
             }
+            @include media('<phone'){
+                padding: 0rem 1rem 0rem;
+            }
             h1{
+                font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
                 font-size: 2rem !important;
                 color: #888888;
                 font-weight: 600;
@@ -50,12 +51,18 @@
         &-sms{
             display: flex;
             flex-direction: column;
-            margin-top: -2rem;
+            margin-top: -1rem;
             margin-bottom: 2rem;
+            @include media('<tablet'){
+                width: 80%;
+            }
+            @include media('<phone'){
+                width: 100%;
+            }
             h1{
-                font-size: 1.8rem !important;
-                @include media('<phone'){
-                    font-size: 1.6rem !important;
+                font-size: 1.2rem !important;
+                @include media('<tablet'){
+                    font-size: 1.3rem !important;
                 }
             }
             input{
@@ -63,7 +70,6 @@
                 background-color: #ffffff;
                 border-radius: 1rem;
                 padding: 1rem;
-
                 &:focus{
                     outline: none !important;
                 }

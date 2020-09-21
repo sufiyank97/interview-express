@@ -82,7 +82,7 @@ const RecruitersPage = () => {
             <Header headerLinks="links2" bgColor="#abc720" />
             <EmployersPara employees={recruitersPara} />
             <RegisterTag />
-            <AvailableTag bgColor="lightgrey" />
+            <AvailableTag bgColor="#e8e8e8" />
             <Benifits benifits={recruitersBenifits} />
             <RegisterTag />
             <Faq />

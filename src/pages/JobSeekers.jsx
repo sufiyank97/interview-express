@@ -93,7 +93,7 @@ const JobSeekers = () => {
             <Header headerLinks="links2" bgColor="#006eab" />
             <EmployersPara employees={jobSeekersPara} />
             <RegisterTag />
-            <AvailableTag bgColor="lightgrey" />
+            <AvailableTag bgColor="#e8e8e8" />
             <Benifits benifits={jobSeekersBenifits} />
             <RegisterTag />
             <JobFairPara />

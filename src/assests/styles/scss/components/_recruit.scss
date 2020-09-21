@@ -1,13 +1,12 @@
 .recruit{
 
     &-title{
-        font-weight: 700;
+        font-family: 'BwModelica ExtraBold';
         font-size: 35px !important;
-        // letter-spacing: .2rem;
     }
-    margin: 0 5rem 5rem 5rem;
+    margin: 5rem 5rem 5rem 5rem;
     @include media('<widescreen'){
-        margin: 0rem;
+        margin: 5rem 0rem;
 
         &-title{
             padding-left:5rem ;
@@ -33,10 +32,13 @@
                 padding: 2rem 15rem 2rem 2rem;
                 h1{
                     font-size: 30px !important;
-                    font-weight: bold;
+                    font-family: 'BwModelica Bold';
+                    margin-bottom: 2rem;
                 }
                 h6{
                     color: #b1aaaa;
+                    line-height: 1.6;
+                    font-size: .9rem;
                 }
                 // width: 50rem;
                 // height: 10rem;
@@ -51,7 +53,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-            margin-top: -5rem;
+            margin-top: -3rem;
             &-image{
                 img{
                     margin-left: -13rem;
@@ -61,10 +63,13 @@
             &-box{
                 h1{
                     font-size: 30px !important;
-                    font-weight: bold;
+                    font-family: 'BwModelica Bold';
+                    margin-bottom: 2rem;
                 }
                 h6{
                     color: #b1aaaa;
+                    line-height: 2;
+                    font-size: .9rem;
                 }
                 z-index: -1;
                 padding: 2rem 15rem 2rem 2rem;
@@ -77,7 +82,7 @@
     }
 
     &-res-1{
-        margin-bottom: 3rem;
+        margin: 3rem 0rem;
         &-image{
             display: flex;
             justify-content: flex-start;
@@ -98,12 +103,14 @@
             h1{
                 margin-bottom: 2rem;
                 font-size: 25px !important;
-                font-weight: bold;
+                font-family: 'BwModelica ExtraBold';
             }
             h6{
                 color: #888888;
-                font-size: 18px !important;
-                margin-bottom: 2rem !important;
+                font-family: 'BwModelica Light';
+                font-size: 17px !important;
+                margin-bottom: 1rem !important;
+                line-height: 1.8;
                 font-weight: 600;
             }
         }

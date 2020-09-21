@@ -1,4 +1,26 @@
-// @font-face{
-//     font-family: 'BwModelica';
-//     src:url('../../../fonts/BwModelica.otf') format("otf")
-// }
+@font-face{
+    font-family: 'BwModelica Medium';
+    src:url('../../../fonts/BwModelicaSS01-Medium.woff') format('woff');
+}
+@font-face{
+    font-family: 'BwModelica Bold';
+    src:url('../../../fonts/BwModelicaSS01-Bold.woff') format('woff');
+}
+@font-face{
+    font-family: 'BwModelica ExtraBold';
+    src:url('../../../fonts/BwModelicaSS01-ExtraBold.woff') format('woff');
+}
+@font-face{
+    font-family: 'BwModelica Light';
+    src:url('../../../fonts/BwModelicaSS01-Light.woff') format('woff');
+}
+@font-face{
+    font-family: 'BwModelica Regular';
+    src:url('../../../fonts/BwModelicaSS01-Regular.woff') format('woff');
+}
+
+
+
+*{
+    font-family: 'BwModelica Medium';
+}

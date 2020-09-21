@@ -7,7 +7,7 @@ const AvailableTag = ({ bgColor }) => {
     return (
 
         <div className="available-tag" style={{ backgroundColor: bgColor }}>
-            <h1>Available On</h1>
+            <h2>Available On</h2>
             <div className="available-tag-images">
                 <img src={appleImg} alt="Apple Link" />
                 <img src={googleImg} alt="Android Link" />
@@ -15,5 +15,6 @@ const AvailableTag = ({ bgColor }) => {
         </div>
     )
 }
+
 
 export default AvailableTag

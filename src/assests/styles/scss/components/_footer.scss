@@ -94,7 +94,8 @@
 
 
 .footer{
-    background-color: lightgray;
+
+    background-color: #eeeeee;
     position: relative;
     width: 100%;
     bottom: 0;
@@ -127,7 +128,8 @@
             justify-content: center;
         }
         @include media('>widescreen'){
-            margin-left: 3rem;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
     &-left-links{
@@ -138,12 +140,15 @@
             column-gap: 4rem;
             @include media('<tablet'){
                 column-count: 2;
-                column-gap: 5rem;
             }
     li{
-        padding: .2rem 0rem;
+        padding: .3rem 0rem;
+        @include media('<tablet'){
+            padding: .5rem 0rem;
+        }
         a{
             color: #888888;
+            font-family: 'BwModelica Medium';
             &:hover{
                 text-decoration: none;
                 color: #abc720;
@@ -169,8 +174,14 @@
             }
         }
         p{
-            font-size: 1.1rem !important;
+            font-family: 'BwModelica Regular';
+            font-size: 1rem !important;
             color: #888888;
+            line-height: 1.8;
+            width: 80%;
+            @include media('<tablet'){
+                width: 90%;
+            }
         }
     }
 }

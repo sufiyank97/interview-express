@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 
 
+
 const Benifits = ({ benifits }) => {
     return (
         <div className="benefits">
@@ -102,6 +103,7 @@ const Benifits = ({ benifits }) => {
                 }
             </div>
 
+
             {
                 (benifits.image2.card) ? (
                     <div className="benefits-recruiters">
@@ -114,7 +116,7 @@ const Benifits = ({ benifits }) => {
                                         </div>
                                     </div>
                                     <div className="benefits-recruiters-1-image-text-box-title">
-                                        <h3>{benifits.image2.title}</h3>
+                                        <h4>{benifits.image2.title}</h4>
                                         <p className="global-para">
                                             {benifits.image2.desc}
                                         </p>
@@ -156,7 +158,7 @@ const Benifits = ({ benifits }) => {
                                     </div>
                                 </div>
                                 <div className="benefits-box-1-text-box-title">
-                                    <h3>{benifits.image3.title}</h3>
+                                    <h4>{benifits.image3.title}</h4>
                                     <p className="global-para">
                                         {benifits.image3.desc}
                                     </p>
@@ -184,7 +186,7 @@ const Benifits = ({ benifits }) => {
                         </div>
                     )
             }
-            <div className="benefits-recruiters" style={{ marginTop: (benifits.image2.card) ? '80px' : '-180px' }}>
+            <div className="benefits-recruiters" style={{ marginTop: (benifits.image2.card) ? '80px' : '-150px' }}>
                 <div className="benefits-recruiters-1-image">
                     <div className="benefits-recruiters-1-image-text">
                         <div className="benefits-recruiters-1-image-text-heading">
@@ -230,7 +232,7 @@ const Benifits = ({ benifits }) => {
                                     </div>
                                 </div>
                                 <div className="benefits-box-1-text-box-title">
-                                    <h3>{benifits.image5.title}</h3>
+                                    <h4>{benifits.image5.title}</h4>
                                     <p className="global-para">
                                         {benifits.image5.desc}
                                     </p>
@@ -240,6 +242,7 @@ const Benifits = ({ benifits }) => {
                     </div>
                 ) : <Fragment />
             }
+
 
             {
                 (benifits.image6) ? (
@@ -258,7 +261,7 @@ const Benifits = ({ benifits }) => {
                                                 </div>
                                             </div>
                                             <div className="benefits-recruiters-1-image-text-box-title">
-                                                <h3>{benifits.image6.title}</h3>
+                                                <h4>{benifits.image6.title}</h4>
                                                 <p className="global-para">
                                                     {benifits.image6.desc}
                                                 </p>

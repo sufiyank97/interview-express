@@ -2,6 +2,7 @@ import React from 'react'
 const unlimitedImg = require('../../assests/images/employers/recruit/unlimited-access.png')
 const bestCandidatesImg = require('../../assests/images/employers/recruit/best-candidates.png')
 
+
 const Recruit = () => {
     return (
         <div className="recruit">

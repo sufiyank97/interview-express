@@ -25,6 +25,7 @@ const featuresArray = [
 ]
 const Features = () => {
 
+
     return (
         <div className="features">
             <h1 className="global-title">Platform Features:</h1>

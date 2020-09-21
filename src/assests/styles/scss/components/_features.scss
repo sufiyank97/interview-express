@@ -5,10 +5,13 @@
         padding: 1rem;
     }
     background-color: #f3f3f3;
-    h1{
-        margin-bottom: 2rem;
-        font-weight: 700;
+    .global-title{
+        margin-bottom: 5rem;
+        font-family: 'BwModelica ExtraBold';
         font-size: 35px !important;
+        @include media('<tablet'){
+            padding: 5rem 2rem 2rem ;
+        }
     }
     &-interview{
         display: flex;
@@ -42,14 +45,29 @@
     padding: 2rem;
     background-color: white;
     border-radius: 2rem;
+    @include media('<tablet'){
+        padding: 1.5rem;
+    }
     h1{
-        font-weight: 700;
-        font-size: 30px !important;
+        font-family: 'BwModelica Bold';
+        font-size: 25px;
+        margin-bottom: 1rem;
+        @include media('<tablet'){
+            font-family: 'BwModelica ExtraBold';
+            font-size: 30px;
+            margin-bottom: 1.5rem;
+        }
+    }
+    p{
+        line-height: 1.8;
+        @include media('<tablet'){
+            line-height: 2;
+        }
     }
 }
 
 .features-res{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     &-image{
         margin-bottom: 1rem;
         display: flex;

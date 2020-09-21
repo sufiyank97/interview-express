@@ -8,16 +8,24 @@
 .available-tag{
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 4rem 0rem;
     justify-content: center;
     align-items: center;
-
+    @include media('<tablet'){
+        padding: 5rem 0;;
+    }
+    h2{
+        font-family: 'BwModelica Bold';
+    }
     &-images{
         display: inherit;
         justify-content: space-evenly;
+        margin-top: 1rem;
         img{
             width: 30%;
+            @include media('<tablet'){
+                width: 40%;
+            }
         }
     }
 }
@@ -36,14 +44,22 @@
             margin-right: 0em;
         }
         button{
+            font-family: 'BwModelica Bold';
             width: 300px;
             height: 50px;
             border-radius: 2rem;
+            font-size: .9rem;
+            word-spacing: 4px;
             color:white;
             border: none !important;
             background-color: #26a8ff;
             &:focus{
                 outline: none !important;
+            }
+            @include media('<tablet'){
+                font-family: 'BwModelica Regular';
+                font-size: 1rem;
+                word-spacing: 2px;
             }
         }
     }
@@ -68,6 +84,8 @@
         }
         h1{
             margin-bottom: 1.5rem;
+            font-family: 'BwModelica ExtraBold';
+            font-size: 35px;
         }
         &-text{
             padding: 5rem;
@@ -87,6 +105,9 @@
                     padding: 1rem;
                     border-radius: 1rem;
                     padding-right: 6rem;
+                    h3{
+                        font-family: 'BwModelica Bold';
+                    }
                     &-image{
                         display: flex;
                         justify-content: flex-start;

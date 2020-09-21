@@ -6,46 +6,6 @@ const instaImg = require('../../assests/images/social-media/insta.svg')
 const linkdinImg = require('../../assests/images/social-media/linkdin.svg')
 const twitterImg = require('../../assests/images/social-media/twitter.svg')
 
-// const Footer = () => {
-//     return (
-//         <div className="footer row">
-//             {/* <div className="container row"> */}
-//                 <div className="footer-left col">
-//                     <div className="footer-left-social-links">
-//                         <img src={facebookImg.default} alt="" />
-//                         <img src={twitterImg.default} alt="" />
-//                         <img src={instaImg.default} alt="" />
-//                         <img src={linkdinImg.default} alt="" />
-//                     </div>
-//                     <div className="footer-left-links">
-//                         <ul>
-//                             <li>Employers</li>
-//                             <li>Virtual Events</li>
-//                             <li>About Us</li>
-//                             <li>Job Seekers</li>
-//                             <li>Private Events</li>
-//                             <li>Features</li>
-//                             <li>Recruiters</li>
-//                             <li>Event Calendar</li>
-//                             <li>Contact</li>
-//                             <li>Job Fairs</li>
-//                             <li>Download</li>
-//                             <li>Careers</li>
-//                         </ul>
-//                     </div>
-//                 </div>
-//                 <div className="footer-right col">
-//                     <div className="footer-right-image">
-//                         <img src={bgImage.default} alt="" />
-//                         <p>Made in Austin. All member work copyright of respective owner, otherwise © 2020 InterviewXpress</p>
-//                     </div>
-//                 </div>
-//             </div>
-//         // </div>
-//     )
-// }
-
-
 
 const Footer = ({ newPosition }) => {
     return (

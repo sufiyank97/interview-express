@@ -12,15 +12,16 @@
 
     @include media('>tablet'){
         &-first{
-            margin-top: -13rem;
+            margin-top: -14rem;
         }
     }
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
     &-text{
 
         h1{
-            font-weight: bold;
+            font-family: 'BwModelica Bold';
             font-size:35px !important;
+            margin-bottom: 2rem !important;
         }
         margin-top: 1rem;
         padding-left: 5rem;
@@ -38,15 +39,16 @@ margin-bottom: 2rem;
     }
     &-text1{
         h1{
-            font-weight: bold;
+            font-family: 'BwModelica Bold';
             font-size:35px !important;
+            margin-bottom: 1rem !important;
         }
         display: flex;
         flex-direction: column;
         padding-left: 5rem;
         
         width: 90%;
-        margin-top: 1rem;
+        margin-top: 3rem;
         
         @include media('<tablet'){
             align-items: center;
@@ -80,6 +82,10 @@ margin-bottom: 2rem;
             background-color: #abc720;
             border-top-right-radius: 3rem;
             border-bottom-right-radius: 3rem;
+            @include media('<tablet'){
+                border-radius: 0rem;
+                border-top-right-radius: 2rem;
+            }
         }
     }
 
@@ -87,6 +93,7 @@ margin-bottom: 2rem;
         margin-left: auto;
         padding-right: 3rem;
         z-index: 1;
+        margin-top: -1rem;
         img{
             width: 70%;
         }
@@ -99,10 +106,9 @@ margin-bottom: 2rem;
         // margin-top: 1rem;
         display: flex;
         &-item{
+
             border: none;
-            padding-left: 0rem !important;
-            padding-bottom: 2rem;
-            // padding: 0em !important;
+            padding: 0 0 1.5rem !important;
             display: inherit;
             @include media('<phone'){
                 align-items: flex-start;
@@ -110,6 +116,7 @@ margin-bottom: 2rem;
             img{
                 margin-right: 1rem;
                 width: 6%;
+                align-self: flex-start;
                 @include media('<tablet'){
                     width: 6%;
                 }
@@ -118,11 +125,12 @@ margin-bottom: 2rem;
                 }
             }
             &-text{
-                width: 60%;
+                width: 80%;
                 display: inherit;
                 align-items: center;
                 color: #888888;
                 font-size: 1rem;
+                line-height: 1.8;
                 @include media('<tablet'){
                     width: 100%;
                 }

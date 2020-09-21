@@ -1,10 +1,11 @@
 .benefits{
 padding-top: 3rem;
-
+//  Left Side
+margin-bottom: 5rem;
 &-box{
     h1{
-        font-weight: bold;
-        margin-bottom: 2rem;
+        font-family: 'BwModelica ExtraBold';
+        margin-bottom: 5rem;
         font-size: 35px !important;
     }
     margin-left: 5rem;  
@@ -22,26 +23,27 @@ padding-top: 3rem;
                 margin-bottom: 20px;
                 padding-left: 2rem;
                 h3{
-                    font-weight: 700;
+                    font-family: 'BwModelica ExtraBold';
                     font-size: 24px !important;
                 }
             }
             &-box{
-                padding: .9rem;
+                padding: .9rem 1rem;
                 width: 700px;
                 
                 z-index: -1;
                 
-                margin-left: -9px;
                 background: #f3f3f3;
                 border-radius: 1rem;
                 display: flex;
+                margin-left: -5px;
+               
                 &-img{
                     display: flex;
                     align-items: center;
                     &-image{
                         background-color: white;
-                        padding: 1rem;
+                        padding: 2rem 1.5rem;
                         display: flex;
                         justify-content: center;
                         border-radius: 1rem;
@@ -54,6 +56,12 @@ padding-top: 3rem;
                 }
                 &-title{
                     padding: 1.5rem;
+                    h4{
+                        font-family: 'BwModelica ExtraBold';
+                    }
+                    p{
+                        line-height: 1.8;
+                    }
                 }
             }
         }
@@ -66,7 +74,7 @@ padding-top: 3rem;
 
     &-res-box{
         h1{
-            font-weight: bold;
+            font-family: 'BwModelica ExtraBold';
             padding-left: 5rem;
             font-size: 35px !important;
             @include media('<phone'){
@@ -95,6 +103,7 @@ padding-top: 3rem;
                         justify-content: center;
                     }
                     h3{
+                        font-family: 'BwModelica ExtraBold';
                         font-size: 24px !important;
                     }
                     margin-bottom: 2rem;
@@ -102,9 +111,11 @@ padding-top: 3rem;
                 margin-bottom: 2rem;
                 &-para{
                     background: #f3f3f3;
-                    padding: 1rem;
+                    padding: 1.5rem;
                     border-radius: 1rem;
                     p{
+                        line-height: 1.8;
+                        font-size: 1.1rem;
                         color:#888888
                     }
                 }
@@ -113,11 +124,22 @@ padding-top: 3rem;
 
         &-card{
             margin: 1.5rem;
+            margin-bottom: 3rem;
             padding: 1.5rem;
             background-color: #f3f3f3;
             border-radius: 1rem;
             &-para{
-                color:#888888
+                color:#888888;
+                line-height: 1.8;
+                font-size: 1.1rem;
+            }
+            &-heading{
+                
+                h3{
+                    font-family: 'BwModelica ExtraBold';
+                    font-size: 24px !important;
+                }
+                margin-bottom: 2rem;
             }
             &-image{
                 width: fit-content;
@@ -133,8 +155,10 @@ padding-top: 3rem;
             }
         }
     }
+
+// recruiters ---- Right side
 &-recruiters{
-    margin-top: -250px;
+    margin-top: -200px;
     margin-right: 7rem;
     
         &-1-image{
@@ -149,17 +173,15 @@ padding-top: 3rem;
                 &-heading{
                     margin-bottom: 20px;
                     h3{
-                        font-weight: 700;
+                        font-family: 'BwModelica ExtraBold';
                         font-size: 24px !important;
                     }
                 }
                 &-box{
-                    padding: 1rem;
+                    padding: .9rem 1rem;
                     width: 700px;
-                    padding-right: 1.5rem;
                     z-index: -1;
                     border-top-left-radius: 1rem;
-                    margin-left: -9px;
                     background: #f3f3f3;
                     border-bottom-left-radius: 1rem;
                     display: flex;
@@ -168,19 +190,22 @@ padding-top: 3rem;
                         align-items: center;
                         &-image{
                             background-color: white;
-                            padding: 1rem;
+                            padding: 1rem 1.5rem;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             border-radius: 1rem;
-                            img{
-                                // width: 150%;
-                                height: fit-content;
-                            }
+                            
                         }
                     }
                     &-title{
                         padding: 1.5rem;
+                        h4{
+                            font-family: 'BwModelica ExtraBold';
+                        }
+                        p{
+                            line-height: 1.8;
+                        }
                     }
                 }
             }
@@ -250,7 +275,14 @@ padding-top: 3rem;
     
         list-style: none;
         li{
-            color: #888888;
+            
+                color: #888888;
+                @include media('<tablet'){
+                    line-height: 1.8;
+                    font-size: 1.1rem;
+                }
+            
+
         }
 }
 .benefits-list li::before{

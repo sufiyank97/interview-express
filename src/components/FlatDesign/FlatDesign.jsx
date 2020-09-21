@@ -6,6 +6,7 @@ const eventsImg = require('../../assests/images/flat-images/my-events.png')
 const roomsImg = require('../../assests/images/flat-images/my-rooms.png')
 const events1Img = require('../../assests/images/flat-images/my-events1.png')
 const rooms1Img = require('../../assests/images/flat-images/my-rooms1.png')
+
 const FlatDesign = () => {
     return (
         <>

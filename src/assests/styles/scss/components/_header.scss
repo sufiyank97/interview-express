@@ -1,5 +1,5 @@
 .navbar{
-    margin-left: 4rem;
+    margin: 0 0 1rem 4rem;
     display: flex;
     align-items: flex-start;
 
@@ -9,6 +9,7 @@
     &-brand{
         flex: 1;
         img{
+            margin: 1rem 0rem;
             width: 80%;
             @include media('<tablet'){
                 width: 60%;
@@ -43,9 +44,12 @@
     }
     .nav-link{
         padding-left: 2rem !important;
-        padding-top: 1rem !important;
         color:white !important;
         height:max-content !important;
+        @include media('>tablet'){
+            padding-top: 2rem !important;
+        }
+        padding-top: 1rem !important;
         @include media('<tablet'){
             color:black !important;
         }

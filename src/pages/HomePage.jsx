@@ -52,7 +52,7 @@ const HomePage = () => {
                             ))
                         }
                     </ListGroup>
-                    <div className="data-arrow" style={{ marginTop: '-3rem' }}>
+                    <div className="data-arrow">
                         <img src={arrowGreen} />
                     </div>
                 </div>
